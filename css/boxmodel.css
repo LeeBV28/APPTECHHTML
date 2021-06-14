@@ -1,5 +1,41 @@
 div{
     width: 500px;
     height: 400px;
-    float: left; /* dồn khối về một phía 
+    float: left; /* dồn khối về một phía */
+    border: 1px solid red; /* solid net lien, có net dut, ..., */
+    /*
+    border-top:trên  ;
+    border-right: ; trái 
+    border-bottom: ;dưới 
+    border-left: ;phải
+    */
+    margin: 15px; /* khoảng các giữa các khối với nhau */
+    /* 
+    có bốn chiếu margin như border
+    có thể đặt số âm theo 1 chiếu.
+    nếu viết margin: 10px 15px 20px 10px; máy sẽ hiểu theo chiều kiem đồng hồ top > right > bottom > left;
+    margin: 10px 15px; máy sẽ lấy theo nguyên lý đối sứng (thieu chieu nao lấy số đối diện) top <> bottom, right <> lift;
+    */
+    padding: 15px; /* khoang cach tu noi dung den vien border: theo nguyên ly cua margin và border */
+    box-shadow:0 0 15px red ; /*bóng của khối 0 0 đầu là độ dịch chuyển của bóng theo chục x,y */
+    
+    
+}
+
+img{
+    max-width: 100%; /* quy định width ảnh nằm trong khối tương tư như vậy với height*/
+    max-height: 100%;
+    }
+#box-s1{  /* thể hiện css theo id (#) */
+    box-shadow: 0 0 10 rgb(47, 35, 211);
+    opacity: 0.5; /* độ mờ của khối */
+    border-radius: 10px; /* cắt góc để góc của khối có đường tròn */
+}
+
+.box-s2{ /* (.) thể hiện class */
+    box-shadow:0 0 10 mediumvioletred ;
+    opacity: 0.5; /* do mo cua khoi */
+}
+.box-s2:hover{
+    opacity: 1;
 }

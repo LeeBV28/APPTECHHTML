@@ -1,0 +1,34 @@
+div{
+    width: 1000px;
+    height: inherit;
+    float: left;
+}
+
+
+    
+
+.dautrang{
+    width: 600px;
+    height: 200px;
+    float: left;
+    background-color:seagreen;
+    padding-left: 400px;
+
+}
+
+.thongtin{
+    width: 310 px;
+    height: 1000px;
+    background-color: salmon;
+    margin-top: -150px ;
+    margin-left: 40px;
+    
+}
+
+.thongtin2{
+    width: 610px;
+    height: 850px;
+    padding-left: 40px;
+    background-color: royalblue;
+
+}
