@@ -1,0 +1,15 @@
+figcaption{
+    text-align: right;
+}
+h1
+{
+    font-size: 25px;
+    text-decoration: underline;
+    color: crimson;
+    font-style: italic;
+
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
