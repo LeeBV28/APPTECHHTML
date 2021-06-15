@@ -1,11 +1,13 @@
 body{
     font-family: 'Source Serif Pro', serif;
     width: 1400px;
+    
 }
 .top{
     width: 1200px;
+    height: 50px;
     float: top;
-    box-shadow:0 0 10px darkgray;
+    box-shadow:0 0 10px darkgray;   
  }
  .bottom{
     width: 1200px;
