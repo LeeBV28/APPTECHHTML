@@ -1,0 +1,5 @@
+layout là chia web cần làm thành nhiều phần vd như top, main, footer
+nguyên lý:
+    + Cắt màn hình: Nội dung chính giữa, Background đi toàn màn hình hiển thị 
+        - Nhận diện: Bordor đi xuyên xuất màn hình
+    + 
