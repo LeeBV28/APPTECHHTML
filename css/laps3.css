@@ -1,34 +1,46 @@
-div{
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     width: 1000px;
-    height: inherit;
-    float: left;
+    margin-left:50px ;
 }
 
-
-    
-
-.dautrang{
-    width: 600px;
+.top{
+    float: left;
+    width: 1000px;
     height: 200px;
-    float: left;
-    background-color:seagreen;
-    padding-left: 400px;
-
+    text-align: left;
+    background-color: #bac3cc;
 }
 
-.thongtin{
-    width: 310 px;
-    height: 1000px;
-    background-color: salmon;
-    margin-top: -150px ;
-    margin-left: 40px;
+.bottom{
+    float: left;
+    width: 1000px;
     
 }
-
-.thongtin2{
-    width: 610px;
-    height: 850px;
-    padding-left: 40px;
-    background-color: royalblue;
-
+.left{
+    width: 200px;
+    float: left;  
+    margin-top: -150px;
+    margin-left: 50px;
+    background-color: #e9e9e9;
+    padding: 40px;
+}
+.right{
+    width: 590px;
+    float:right;
+    padding: 40px;
+    
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+h5{
+    font-size: 17px;
+    margin-bottom: -10px;
 }
