@@ -19,10 +19,11 @@ body{
     margin-right: auto;
     float: none;
 }
-.header{
+.top{
     background-color: #ffffff;
     border-bottom: 1px solid #aabbcc;
     padding: 20px 0;
+    width: 800px;
 }
 .logo{
     float: left;

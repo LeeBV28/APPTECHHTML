@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'PT Serif', serif;
+    color: black;
+    background-color: gray;
+}
+.section{
+    width: 100%;
+    float: left;    
+}
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;    
+}
+.header{      
+    color: white;    
+       
+}
+.box{
+    background-color: black;
+    padding: 50px;
+    text-align: center;   
+}
+
+.logo{
+    float: left;
+    width: 20%;
+}
+.topink{
+    float: left;
+    width: 40%;
+    
+}
+.toplink ul{
+    float: left;       
+    margin-left: 50px;    
+}
+.toplink a{
+    text-decoration: none;
+    color: white;
+}
+.toplink li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+.sharelk{
+    float: right;
+    width: 30%;
+}
+.sharelk ul{
+    float: left;
+}
+.sharelk li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+.sharelk a{
+    color: white;
+    text-decoration: none;
+}
+.logo h1{
+    margin-top: -10px;
+}
+.center p{
+    margin-top: 20px;
+}
+.khung{
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100px;
+    border: 2px solid white;
+}
+.conten{
+    color: black;
+    background-color: white;
+    height: 2000px; 
+    padding: 20px 80px;
+}
+
+.noidung{
+    width: 260px;
+    text-align: left;
+    margin: 20px 10px;
+    float: left;    
+}
+.noidung.ba{
+    float: right;
+}
+.noidung h2{
+    color: rgb(218, 221, 221);
+    font-size: 10px;
+    margin: 10px 0;    
+}
+.noidung h1{
+    font-size: 20px;
+    margin-bottom: 20px;    
+}
+.noidung p{
+    margin-bottom: 20px;
+}
+.noidung img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
