@@ -117,8 +117,11 @@ body{
     margin-bottom: 30px;
 }
 .first{
-    background-color: black;
+    color: white;
     line-height: 20px;
+}
+.box.first{
+    background-color: black;
 }
 .social{
     line-height: 25px;   
