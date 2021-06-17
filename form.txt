@@ -1,0 +1,32 @@
+thẻ <form action="#" nethod="#"></form> báo hiệu đây là nơi người dùng nhập vào
+    + action nơi người giữ liệu sẽ gửi về
+    + nethod: Kiểu giữ liệu sẽ gửi lên  có 2 kiểu là get và post
+trong form sẽ có các trường cho người dùng điền
+    <input type="text" name="fullname" blaceholder="fullname" required />
+        + type: Dạng hiển thị dữ liệu người dùng nhập các dạng type:
+            + emal: có duôi sau @ hay gì đấy
+            + number: kiểu số
+            + tel: số điện thoại
+            + date: ngày
+            + time: giờ
+            + radio: tích chọn (kèm nhãn labal) nếu để name 2 thẻ giống nhau thì cùng trường chỉ chọn được 1, Nếu khác name chọn được cả 2:
+            + Checkbox: tích chọn hình vuông kiểu người dùng có đồng ý không (kèm nhãn labal) không đi kèm blaceholder mà là value
+            + color: chọn màu
+            + range: kiểu thanh kéo trượt
+        + blaceholder: nhãn ẩn khi người dùng nhập ký tự vào sẽ mất đi
+        + required: bắt buộc người dùng phải nhập đúng. Nếu không nhập button được.
+            
+    <textarea rows="10" cols="100" name="deshsadh" blaceholder="dhjashd".."/> kiểu điền nọi dung. ô điển tự động to lên theo lượng nội dung nhập vào
+        + rows là độ rộng của khung điền theo cột 
+        + cols là độ rộng khung điền theo hàng
+    
+    <select name="city"> kiểu chọn
+        <option value="hanoi">HÀ NỘI</option>
+            + value: là dữ liệu sẽ gửi lên máy chủ.   
+    </select>
+
+    <button type="submit/button/reset">submit</button> thẻ gửi giữ liệu có 3 loại type;
+        + submit: gửi giữ liệu đi
+        + button: không làm j cả, sử dụng chủ yếu để làm javacrips
+        + reset: chuyển form về lúc chưa bấm gì. 
+    
