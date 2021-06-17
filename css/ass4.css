@@ -117,21 +117,24 @@ body{
     background-color: blanchedalmond;
 }
 .khoi{
-    width:100%;
-    background-color: #bfc2be;
-    float: left;  
-    
+    width:100%;    
+    background-color: #bfc2be; 
+    float: left;          
 }
-.khoi ul{
-    float: left;
-    padding: 10px 200px;       
+.ula{   
+    float: left; 
+    margin: auto;  
+    width: 500px;
+}
+.ulb{
+    float: right;
+    margin: auto;
+    width: 1000px;
 }
 .khoi li{    
     float: left;
     text-decoration: none;
     list-style: none;
-    margin: 20px;    
-}.khoi hr{
-    float: none;
-}
+    margin: 20px;     
+
 
