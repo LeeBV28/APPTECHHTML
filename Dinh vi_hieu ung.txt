@@ -1,0 +1,9 @@
+* Position: Thay đổi vị trí theo định hướng top or bottom, left or right
+    + static; giống như none
+    +relative: định vị theo cha
+    + absolute: định vị theo cha có Position là relative, Nếu không có thì định vị theo body
+ *Transform: Thay đổi vị trí ở mặt hiển thị. Nhưng thực tế các thuộc tính width, hight, float, .. không thay đổi. thường được dùng kèm với hover:
+    + Có nhiều thuộc tính Transform như thay đổi vị trí, Scale, xoay, ... 
+*animation: hiệu ứng chạy theo giá trị được định sẳn kyeframes (khai báo @kyeframes name {})
+    + sử dụng animation cho box nào cần khai báo name của kyeframes vào vị trí của box đó gần giống như khai báo hàm.
+    

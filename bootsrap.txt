@@ -1,0 +1,5 @@
+Grid options:
+    + Mặc định chia màn hình thành 12 phần:
+    + Chia các phần theo sự chiếm số phần của 12; (vd: col-md-4)
+    + Để tất cả nội dung chia nhỏ của 12 phần trong khối <div class="row"></div> để lề lối của web được thẳng hàng lối.
+    
