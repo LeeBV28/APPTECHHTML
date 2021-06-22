@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+</head>
+<body>
+    <h1> Demo Javascript</h1>
+    <script type="text/javascript">
+        // code javescript viết trong khoang script
+        var x;   //khai báo biến; x là biến
+        //nhóm kiểu giữ liệu choa làm 4 loại: namber, string (mặc định là chuỗi), array (là một mảng), object (đối tượng)
+        x = 15.14; // x là 1 number
+        console.log(x);
+        x = "xin chao"; // x lúc này là một string
+        // biến trong js là một biến linh hoạt có thể thay đổi tùy vào người dùng
+        console.log(x); // in ra giá trị của x
+        x= x + 5; // kết qua là xin chao5
+        console.log(x);
+        var y = 10;
+        y = y + 5; // kết quả 25
+             /* number + number -> number
+                number + string -> String
+                sting + sting -> srting
+            */
+        console.log(y)
+        console.log("Xin chao, day la lop T2104E, so hoc sinh:"+25+" học sinh"); // các in ra một chuỗi
+        if(y>20){
+            console.log("y>20")
+        }
+        else{
+            console.log("y<20")
+        }
+        for(var i=0; i<20; i++ ){
+            console.log("i=" +i);
+        }
+        // cach sử dụng if, else, for, ... gần tương tự c. Chỉ khác biến và kiểu dữ liệu:
+
+        // mảng: 
+        var arr=[]; // khai báo một mảng - không giới hạn số lượng
+        arr[0] = 1001;
+        arr[1] = "xin chao" // không rang buoc kieu giu lieu.
+        arr[2] = "12" // nguy hiểm - đây là string chứ không phải number.
+        arr[2]+= 15; // kết quả là 1215 nối chuỗi chứ không phải + 2 number
+        console.log(arr[0]);
+        console.log(arr[2]);
+        console.log(arr);
+        arr[3] = [1,2,3,4]; // không giới hạn các chiều của màng (mảnh 2 chiều)
+        arr[4] = ["xin chao",1,2,3, [1,2,3,4]]; // mảng 3 chiều
+        console.log(arr[4]);
+        
+        var arr2 = [];
+        for(var i=0; i<20; i++){
+            // arr2[i] = i*i; viết như này khi ra ngoài nếu cần them một arr2 sẽ cần nhớ i đã chạy đến bao nhiêu vậy nên viết các khác
+            arr2.push(i*i); // arr2 sẽ tự động chạy từ 0 đến 20 và push giá trị tính toán trong ngoặc
+        }
+        arr2.push(555);
+        arr2[22]=55;
+        arr2.push(999);
+        console.log(arr2);
+        console.log(arr2[21]); // undefined - chưa định nghĩa: 
+
+        // hàm:
+        function tinhtong(a,b){  // chi cần chuyển vào 2 sô a,b không cần quan tâm kiểu giữ liệu
+            return a+b;
+        }
+        var c = tinhtong(5,6);
+        console.log("c=" +c);
+        function binhphuong(a){
+            console.log(a*a);
+        }
+
+
+        // giới thiệu một số hàm hay dùng:
+        // alert("cấm trẻ em dưới 18 tuối vào trang web, chúng tôi không chịu trách nhiệm về nội dung trang web"); // Hiển thị cảnh báo, người dùng chỉ có thể bấm ok:
+        // confirm("Bạn chắc chẵn nộp bài thi"); // Hiển thị cảnh báo. trả về true (nhấn ok) or false (nhấn cancel), VD:
+        // var kt = confirm("bạn chac chan muon nop bai thi");
+        // if(kt){
+        //    alert("chuc mung ban da thi thanh cong");
+        //}else{
+        //    alert("Rat tiec, Vui long doi ky thu lai");
+        //}
+
+       // prompt("Nhap tuoi cua ban");  // kieu du lieu la string
+        var s = prompt("Nhap tuoi cua ban");
+        console.log(s);
+        var t = parseInt(s);  // chuyen doi kieu du lieu sang int con co parsefloat;
+        console.log(t);
+        /* 18 -> 18 
+            18a8 -> 18 // dung lai khi gap text
+            a18a -> not a number (nan) 
+        */
+       
+
+    </script>
+</body>
+</html>
