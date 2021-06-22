@@ -1,0 +1,42 @@
+img{
+    max-width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: white;
+}
+.section{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.row{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.header h1{    
+    text-align: left;
+    background-color: rgb(179, 172, 160);
+    margin: 20px 15px;
+    box-shadow:0 0 10px darkgray;
+}
+.conten{
+    background-color: whitesmoke;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.back{
+    background-color: black;
+    color: white;
+}
