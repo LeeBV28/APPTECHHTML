@@ -59,6 +59,9 @@ body{
 .main img{
     border-radius: 10px;
 }
+.main a:hover{
+    opacity: 0.5;
+}
 .box h2{
     font-size: 18px;
 }
@@ -78,4 +81,9 @@ body{
 }
 .footer img{
     margin-bottom: 5px;
+}
+h4{
+    text-align: center;
+    color: #2bc8e5;
+    font-size: 20px;
 }
