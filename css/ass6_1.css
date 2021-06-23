@@ -1,0 +1,81 @@
+img{
+    max-width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #14182a;
+    color: white;
+}
+.section{
+    width: 100%;
+    float: left;
+}
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+.header{
+    background-color: #262b4d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo{
+    margin-top: -5px;
+}
+.tranding{
+    margin: 20px 0;
+    color: #2bc8e5;
+}
+.tranding a{
+    color: white;
+    text-decoration: none;
+}
+.main{
+    text-align: center;
+    margin-top: 80px;
+}
+.main h1{
+    color: #2bc8e5;
+    font-size: 20px;
+    text-align: left;
+}.main h2{
+    color: white;
+    font-size: 15px;
+   
+}
+.main a{
+    color: white;
+    text-decoration: none;
+}
+.main img{
+    border-radius: 10px;
+}
+.box h2{
+    font-size: 18px;
+}
+.box h3{
+    font-size: 16px;
+}
+.box p{
+    margin-top: 15px;
+}
+.footer h1{
+    color: #2bc8e5;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer p{
+    font-size: 12px;
+}
+.footer img{
+    margin-bottom: 5px;
+}
