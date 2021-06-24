@@ -1,0 +1,41 @@
+** Toán tử 3 ngôi: min>=10?min:"0"+min;
+    vd: var min_txt = min>=10?min:"0"+min;
+    tương đương: 
+        if(sec>=10){
+            var sec_txt=sec;
+        }
+        else{
+            var sec_txt="0"+sec;
+        }
+
+** setInterval: Sét một khoảng thời gian thực
+    setInterval(function(){
+    ham sẽ chạy sau khoảng thời gian "time"
+    },time)
+
+** Gọi js vào HTML:
+    <script type="text/javascript" src="đường dẫn">
+        - Lưu ý; Khi đã có src thì không viết code ở đây nữa vì có src cod trong đoạn này sẽ không chạy script sẽ gọi thẳng đến file ở đường dẫn.
+    </script>
+
+*** Object (đối tượng)
+    * Khai báo: var obj1 = {
+        name: ..., ("Bui Văn Lê, "kết thúc bằng giấu , ")
+        age: 19,
+    }
+        -ojb1: Là một 1 biến có giá trị là một đối tường (Tên biến)
+        -name, age: là một thuộc tính của obj1:
+    * Gọi đối tượng: console.log(obj1.name); 
+        - gọi đối tượng obj1 và thuộc tính name;
+    * sửa thông tin or điền thông tin: obj1.age = 10;
+
+    * Nhân bản đối tượng: Object.create(obj1);
+
+    * chạy Object: Cần có thêm run: function(){
+        console.log
+    }
+
+
+    
+
+    

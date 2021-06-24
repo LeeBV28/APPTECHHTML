@@ -73,9 +73,9 @@
         }
 
 
-        // giới thiệu một số hàm hay dùng:
-        // alert("cấm trẻ em dưới 18 tuối vào trang web, chúng tôi không chịu trách nhiệm về nội dung trang web"); // Hiển thị cảnh báo, người dùng chỉ có thể bấm ok:
-        // confirm("Bạn chắc chẵn nộp bài thi"); // Hiển thị cảnh báo. trả về true (nhấn ok) or false (nhấn cancel), VD:
+//       giới thiệu một số hàm hay dùng:
+//      alert("cấm trẻ em dưới 18 tuối vào trang web, chúng tôi không chịu trách nhiệm về nội dung trang web"); // Hiển thị cảnh báo, người dùng chỉ có thể bấm ok:
+//      confirm("Bạn chắc chẵn nộp bài thi"); // Hiển thị cảnh báo. trả về true (nhấn ok) or false (nhấn cancel), VD:
         // var kt = confirm("bạn chac chan muon nop bai thi");
         // if(kt){
         //    alert("chuc mung ban da thi thanh cong");
@@ -84,15 +84,44 @@
         //}
 
        // prompt("Nhap tuoi cua ban");  // kieu du lieu la string
-        var s = prompt("Nhap tuoi cua ban");
-        console.log(s);
-        var t = parseInt(s);  // chuyen doi kieu du lieu sang int con co parsefloat;
-        console.log(t);
+        //var s = prompt("Nhap tuoi cua ban");
+        //console.log(s);
+       // var t = parseInt(s);  // chuyen doi kieu du lieu sang int con co parsefloat;
+        //console.log(t);
         /* 18 -> 18 
             18a8 -> 18 // dung lai khi gap text
             a18a -> not a number (nan) 
         */
-       
+       //setTimeout(() => {    //set thời gian để thực thi một hàm {}
+       //    alert("xin chao");
+      // }, 5000); // 5000 là thơi gian chờ thực thi tính bằng mili s. 5000==5s
+/*
+       setInterval(function(){ // thự thi lại sau thời gian sét. lặp liên tục nếu muốn dùng cần khai báo thêm biến và thực thi clearinterval
+           alert("xin chao");
+       }, 5000);
+*/
+       // clear seinterval
+       /* var k=0;
+       var si = setInterval(function(){
+           alert("hello");
+           k++;
+           if(k>2){
+               clearInterval(si); // loại bỏ Setinterval
+           }
+       })
+       */
+//       for(var i=9; i>0; i--){
+//           for(j=59; j>0; j--){               
+//               console.log(i, ":" j);
+//           }
+//       }
+        setInterval(function(){
+            for(var i=9; i>0; i--){
+                for(j=59; j>0; j--){               
+                console.log(i, ":" ,j);
+                }
+             }
+        },1000);
 
     </script>
 </body>
