@@ -1,0 +1,22 @@
+sự kiện: Tên sự kiện="ten funtion" (vd onclick="demo_1()")
+    - Khi người dùng nhấn nút thì lệnh mới thực hiện.
+
+    + onclick: sự kiện click chuột. 1 click
+    + ondblclick: Nhấn 2 lần
+
+    + onmouseenter: Khi người dùng đưa chuột vào.
+    + onmouseleave: Khi người duung đưa chuột ra. Cùng cặp với seenter
+    
+    + onkeydown: Khi người đung nhấn phím xuống 
+    + onkeyup: Khi người dúng nhả phím
+    + onkeypress: khi ký tụ được nhập vào (tức là nút xoá không có press)
+
+    + oncopy: 
+    + oncut:
+    + onpate: 3 sự kiện sảy ra khi người dùng copy, cut, pate
+
+    + onchange: Khi người dùng lựa chọn các option
+
+this là đối tượng ngầm định thể hiện đặc tính của chính đối tượng bao nó:
+
+var k=event.keycode: biến hiển thị ký tự mã asiII

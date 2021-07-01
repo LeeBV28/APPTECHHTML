@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onmouseenter="demo_2()" onmouseleave="demo_3()" >Demo Event trong JS</h1>
+    <button type="button" onclick="demo_1()">Nhấn vào đây để xem thông tin</button>
+    <input onkeydown="textInput('keydown')" onkeyup="textInput('keyup')" onkeypress="textInput('keypress')" type="text" name="inputdemo" placeholder="Enter a text"/>
+    <input onkeydown="test_this(this)" type="text" name="test_this" placeholder="test_this" />
+
+    <hr/>
+    <h2>Nhập vào thời gian đếm ngược</h2>
+    <input name="timer" onkeypress="timerCountdown(this)" placeholder="Timer.." type="number"/>
+    <h2>
+        <span id="box-min" class="bg-success">00</span>
+        <span class="bg-success">:</span>
+        <span id="box-sec" class="bg-success">00</span>
+    </h2>
+    <hr/>
+    <button type="button" onclick="chonQua()" class="btn btn-primary">Nhấn chọn quà ngẫu nhiên</button>
+    <h2><span id="ketqua" class="bg-info">Món quà nhận được:</span> </h2>
+    <script src="js/demo_even.js"></script>
+</body>
+</html>

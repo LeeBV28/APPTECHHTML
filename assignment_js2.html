@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment js 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-info text-center" style="margin-top: 50px;">
+                <h1>Chơi Việt Lót. Chọn số xong biết ngay kết quả</h1>
+                <p>
+                    <strong>Lưu Ý:</strong> Nếu bạn thắng phần thưởng ở đây chỉ là hư ảo và đừng đòi tiền tôi nhá</p>
+            </div>
+            <h2>
+                Nếu các bạn chưa rõ cách chơi hẫy bấm vào đây nhé:
+                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#huongdanchoi" aria-expanded="true">Xem Hướng Dẫn Chơi</button>
+            </h2>
+            <div id="huongdanchoi" class="collapse">
+                <div class="col-md-6 text-center">
+                    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#cachchoi" aria-expanded="true">Xem Hướng Dẫn Chơi</button>
+                    <div class="collapse" id="cachchoi">
+                        <ol  class="text-left">
+                            <li>họn 5 số mà bạn cho là sẽ đúng </li>
+                            <li>Sau khi chọn xong bấm submit</li>
+                            <li>Đợi kết quả chỉ ra. Bạn sẽ thấy số mà vòng quay đưa ra</li>
+                            <li>So sánh với cơ cấu giả thưởng. Hoặc bấm nút <mark>Quà Của Tôi</mark> để xem bạn có trúng gì không nhé</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#giaithuong" aria-expanded="true">Cơ Cấu Giải Thưởng</button>
+                    <div class="collapse text-left" id="giaithuong">
+                        <h3>So sánh số bạn nhập và con số random hôm nay nếu:</h3>
+                        <p>Nếu đúng dưới 2 số thì chúc mừng bạn không có nghìn nào.</p>
+                        <p>Nếu đúng 3 số: Tung hoa đi nào bạn có 500.000VNĐ</p>
+                        <p>Nếu đúng 4 số: Báo cô già chú bác ở nhà mổ trâu đi nhé. Bạn có 20 cụ hay còn gọi là 20.000.000VNĐ</p>
+                        <p>Nếu chúng 5 số: Bạn có cần chúng tôi liên hệ hộ nhà thiết kế hay cửa hàng xe hôi nào không vì bạn đã chúng 10 tỵ rồi đấy.</p>
+                    </div>
+                </div>
+            </div> 
+         </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h2>Nếu đã rõ rồi thì thử vận may thôi nào:</h2>
+            <h3>Nhập con số của bạn vào ô <input class="btn btn-info" name="somaymaan" onkeypress="somayman(this)" placeholder="Nhập Số May Mắn ..."  type="number"/> và bấm Enter</h3>
+            <p>Số bạn vừa nhập là <span id="key" class="bg-success">00000</span></p>
+            <h2><button class="btn btn-danger" type="button" onclick="random5so()">Nhấn để xem số may mắn hôm nay</button>
+                <span id="ketqua">                    
+                </span>
+            </h2>
+            <!-- <button class="btn" type="button" onclick="somayman(e)">nhấn</button>             -->
+        </div>
+    </div>
+    <script>
+        function somayman(e){
+            var v = e.value;
+            var keyy = document.getElementById("key");
+            keyy.innerText= v ;
+            var number = parseInt(v);
+            console.log(number);
+            var tmp=[];
+            for(i=4; i>=0; i--){
+                tmp[i] = number % 10;
+                // console.log(tmp[i]);
+                number = number/10;
+                number = parseInt(number);
+                // console.log(number);
+            }
+            
+            var rd=[];
+            var nb1 = Math.random()*10;
+            nb1 = parseInt(nb1);
+            rd[0]=nb1;
+            var nb2 = Math.random()*10;
+            nb2 = parseInt(nb2);
+            rd[1]=nb2;
+            var nb3 = Math.random()*10;
+            nb3 = parseInt(nb3);  
+            rd[2]=nb3;  
+            var nb4 = Math.random()*10;
+            nb4 = parseInt(nb4);
+            rd[3]=nb4;
+            var nb5 = Math.random()*10;
+            nb5 = parseInt(nb5);
+            rd[4]=nb5;
+            var count;
+            for(var i=0; i<5; i++){
+                console.log(rd[i])
+            }
+            for(var i = 0; i<5; i++){
+                if(tmp[i] == rd[i]){
+                    count++;
+                }
+            }
+            console.log("dem bang  " +count);
+               
+            
+        }
+        // function random5so(){                    
+        //     var nb1 = Math.random()*10;
+        //     nb1 = parseInt(nb1);
+        //     var nb2 = Math.random()*10;
+        //     nb2 = parseInt(nb2);
+        //     var nb3 = Math.random()*10;
+        //     nb3 = parseInt(nb3);    
+        //     var nb4 = Math.random()*10;
+        //     nb4 = parseInt(nb4);
+        //     var nb5 = Math.random()*10;
+        //     nb5 = parseInt(nb5);
+        //     var kqq= " "+nb1+nb2+nb3+nb4+nb5;
+        //     var kq=document.getElementById("ketqua");
+        //     kq.innerText = kqq;
+            // console.log(kq);
+        
+        // function chuyen(){
+        //     var vnew                    
+        //     var tmp = [];
+        //     for(var i=5; i>0; i--){
+        //         tmp[i]= vnew %10; 
+        //         vnew = vnew /10;
+        //     }
+        //     for var i =0; i<tmp.length; i++{                         
+        //     console.log (tmp[i]);  
+        //     } 
+        // }
+    </script>
+</body>
+</html>
