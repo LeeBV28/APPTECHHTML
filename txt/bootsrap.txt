@@ -1,5 +1,88 @@
-Grid options:
-    + Mặc định chia màn hình thành 12 phần:
-    + Chia các phần theo sự chiếm số phần của 12; (vd: col-md-4)
-    + Để tất cả nội dung chia nhỏ của 12 phần trong khối <div class="row"></div> để lề lối của web được thẳng hàng lối.
-    
+Khung hiển thị:
+    .container: hiển thị nội dùng cách lề một khoảng
+    .container-fluid: Hiển hị nội dung sát với lề trình duyệt
+    <div class="container" or "container-fluid"></div>
+
+Grid options: Cấu trúc col-**-**   (VD: cod-md-12)
+    - Hệ thống lưới: (khác biệt khi hiển thị ở màn hình có width tương ứng sẽ chia được cột hay không:
+     VD dùng md chia thành 3 cột khi hiển thị ở màn hình nhỏ sẽ chuyển thành 1 cột dọc nhưng xs vẫn hiển thị thành 3 cột)
+        + xs (dành cho điện thoại - màn hình rộng dưới 768px) vd: col-xs-12
+        + sm (dành cho máy tính bảng - màn hình rộng bằng hoặc lớn hơn 768px)
+        + md (đối với máy tính xách tay nhỏ - màn hình rộng bằng hoặc lớn hơn 992px)
+        + lg (dành cho máy tính xách tay và máy tính để bàn - màn hình rộng bằng hoặc lớn hơn 1200px)
+    - Cấu trúc cơ bản: 
+    <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+    </div>
+        + Đầu tiên tạo một hàng .row nằm trong .container
+        + thêm các cột tương ứng .col-*-* (lưu ý: các số trong .col-*-* phải có tổng bằng 12d cho mỗi hàng)
+
+Bootstrap Text / Typography:
+    - Kích thước mặc định là 14px chiều cao là 1.428 được áp dụng cho body tương ứng với text thẻ <p>
+    - các thẻ h mặc định như sau: h1 - 36px, h2 - 30px, h3 - 24px, h4 - 18px, h5 - 14px, h6 - 12px. 
+    - thẻ <small></small> được dùng để tạo văn bản phụ  trong tiêu đề: <h1>Hướng dẫn sử dụng tiêu đề <small>Tiêu đề được sử dụng với chữ in đậm và font-size to hơn</small></h1>
+
+BS IMAGES:
+    + .img-rounded thêm góc tròn cho ảnh
+    + .img-circle chuyển ảnh thành hình tròn
+    + .img-thumbnail chuyển ảnh thành hình nhỏ.
+
+
+BS jumbotron
+    + Một jumbotron được hiển thị dưới dạng một hộp màu xám với các góc tròn. Nó cũng phóng to kích thước phông chữ của văn bản bên trong nó.
+    + .page-header: them một đường ngang dưới cùng phần tử giống như hr.
+
+Bootstrap Wells: thêm một border góc tròn cho phần từ nằm trong
+    + .well well-sm: Kích thưở nhở
+    + .well: kích thưỚc bình thường
+    + .well well-lg: kích thước lớn
+
+BS Cảnh Báo alert: cú pháp .alert kèm theo các ngữ cảnh: .alert-success, .alert-info, .alert-warning hoặc .alert-danger
+    + Liên kết cảnh bảo: thêm .alert-link trong thẻ <a href="#" class="alert-link"></a>
+    + .alert-dismissible để đóng một cảnh bảnh báo. Sẽ hiện biểu tương x ở cuối khung
+
+BS buttons:
+    + Các loại nút: 
+        btn mặc định 
+        btn-default: có viền nền màu xám
+        btn-primary: Màu xanh dương
+        btn-success: Màu xanh lá
+        btn-info: Màu xanh da trời
+        btn-warning: Màu vàng
+        btn-danger: Màu đỏ cam
+        btn-link: Không màu nên chữ màu xanh
+    + Kích thước buttons: 
+        .btn-lg: Lớn
+        .btn: bình thường 
+        .btn-sm: nhỏ
+        .btn-xs: small
+    + Cấp độ: .btn-block
+    + Trạng thái;
+        .active: Hoạt động có thể nhấn
+        .disabled: Vô hiệu hoá không thể nhấn
+bs group buttons:
+    + sử dung <div class="btn-group> để tạo một nhóm nút
+    + Dùng kích thước cho cả nhóm bằng class: .btn-group-lg|sm|xs >>> định kích thước cho tất cả các nút trong khói div
+    + .btn-group-vertical: để tạo nhóm nút dọc
+    + .btn-group-justified: Để mở rộng nút bằng toàn bộ chiều rộng của phần từ mẹ
+
+Nhãn và huy hiệu trong BS: 
+    + Huy Hiệu: Sử dụng .badge trong cặp thẻ <span></span>
+    + Nhãn: Sử dụng các .label tiếp theo là một trong sáu lớp học theo ngữ cảnh 
+        .label-default, 
+        .label-primary, 
+        .label-success, 
+        .label-info, 
+        .label-warninghay 
+        .label-danger, 
+    trong vòng một <span>yếu tố để tạo ra một nhãn:
+
+Phân trang: 
+    + Dùng .pagination or breadcrumbs trong thẻ ul 
+    + Trạng thái hoạt động: thêm .cative trong thẻ li ở trang họ đang xem
+    + .disabled tronh thẻ li ở trang muốn vô hiệu hoá
+    + Định cỡ: thêm .pagination-lg|sm
+
+
+
