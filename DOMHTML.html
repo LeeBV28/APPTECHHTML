@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_HTML</title>
+</head>
+<body>
+    <input type="text" id="input_1" >
+    <button type="button" onclick="test()">nhấn thử đi</button>
+    <div id=kq_input_1></div>
+    <div id="dongho"></div>
+
+
+
+
+	<script type="text/javascript" charset="utf-8">
+		//Lấy giờ hệ thống liên tục
+		setInterval(function() {
+			var date = new Date();
+			var gio = date.getHours();
+			var phut = date.getMinutes();
+			var giay = date.getSeconds();
+			document.getElementById('dongho').innerHTML = gio + ':' + phut + ':' + giay;
+		}, 1000);
+	</script>
+
+    <script type="text/javascript">
+        function test(){
+            var input_1 = document.getElementById("input_1");
+            var n = input_1.value;
+            console.log(n);
+        }
+    </script>
+</body>
+</html>

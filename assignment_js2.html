@@ -48,88 +48,17 @@
     </div>
     <div class="container">
         <div class="row">
-            <h2>Nếu đã rõ rồi thì thử vận may thôi nào:</h2>
-            <h3>Nhập con số của bạn vào ô <input class="btn btn-info" name="somaymaan" onkeypress="somayman(this)" placeholder="Nhập Số May Mắn ..."  type="number"/> và bấm Enter</h3>
-            <p>Số bạn vừa nhập là <span id="key" class="bg-success">00000</span></p>
-            <h2><button class="btn btn-danger" type="button" onclick="random5so()">Nhấn để xem số may mắn hôm nay</button>
-                <span id="ketqua">                    
-                </span>
-            </h2>
-            <!-- <button class="btn" type="button" onclick="somayman(e)">nhấn</button>             -->
+            <div class="form-group">
+                <label>Input Number</label>
+                <input type="number" min="0" max="99" name="luckynumber" id="luckynumber"
+                    class="form-control" />
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="inputNumber()" class="btn btn-primary">Submit</button>
+                <button type="button" onclick="choilai()" class="btn btn-danger">Chơi Lại</button>
+            </div>
         </div>
     </div>
-    <script>
-        function somayman(e){
-            var v = e.value;
-            var keyy = document.getElementById("key");
-            keyy.innerText= v ;
-            var number = parseInt(v);
-            console.log(number);
-            var tmp=[];
-            for(i=4; i>=0; i--){
-                tmp[i] = number % 10;
-                // console.log(tmp[i]);
-                number = number/10;
-                number = parseInt(number);
-                // console.log(number);
-            }
-            
-            var rd=[];
-            var nb1 = Math.random()*10;
-            nb1 = parseInt(nb1);
-            rd[0]=nb1;
-            var nb2 = Math.random()*10;
-            nb2 = parseInt(nb2);
-            rd[1]=nb2;
-            var nb3 = Math.random()*10;
-            nb3 = parseInt(nb3);  
-            rd[2]=nb3;  
-            var nb4 = Math.random()*10;
-            nb4 = parseInt(nb4);
-            rd[3]=nb4;
-            var nb5 = Math.random()*10;
-            nb5 = parseInt(nb5);
-            rd[4]=nb5;
-            var count;
-            for(var i=0; i<5; i++){
-                console.log(rd[i])
-            }
-            for(var i = 0; i<5; i++){
-                if(tmp[i] == rd[i]){
-                    count++;
-                }
-            }
-            console.log("dem bang  " +count);
-               
-            
-        }
-        // function random5so(){                    
-        //     var nb1 = Math.random()*10;
-        //     nb1 = parseInt(nb1);
-        //     var nb2 = Math.random()*10;
-        //     nb2 = parseInt(nb2);
-        //     var nb3 = Math.random()*10;
-        //     nb3 = parseInt(nb3);    
-        //     var nb4 = Math.random()*10;
-        //     nb4 = parseInt(nb4);
-        //     var nb5 = Math.random()*10;
-        //     nb5 = parseInt(nb5);
-        //     var kqq= " "+nb1+nb2+nb3+nb4+nb5;
-        //     var kq=document.getElementById("ketqua");
-        //     kq.innerText = kqq;
-            // console.log(kq);
-        
-        // function chuyen(){
-        //     var vnew                    
-        //     var tmp = [];
-        //     for(var i=5; i>0; i--){
-        //         tmp[i]= vnew %10; 
-        //         vnew = vnew /10;
-        //     }
-        //     for var i =0; i<tmp.length; i++{                         
-        //     console.log (tmp[i]);  
-        //     } 
-        // }
-    </script>
+    <script type="text/javascript" src="js/bt2.js"></script>
 </body>
 </html>
