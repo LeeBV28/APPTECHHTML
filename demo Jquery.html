@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="title">Tiêu đề bài báo</h1>
+<button type="button" onclick="hidePg()">Hide</button>
+<button type="button" onclick="showPg()">Show</button>
+<button type="button" onclick="onOff()">ON-OF</button>
+<p class="pg">Biến thể Delta lần đầu tiên được phát hiện ở Ấn Độ vào tháng 12 năm ngoái, cho đến nay đã lây lan ra khoảng 100 quốc gia trên thế giới. Tổ chức Y tế Thế giới (WHO) gần đây cảnh báo rằng biến thể này có thể sớm trở thành chủng virus "thống trị" toàn cầu</p>
+<p class="pg">Biến thể Delta cũng là nguyên nhân dẫn tới sự gia tăng số ca nhiễm ở Nhật Bản trong thời gian gần đây, ảnh hưởng đến kế hoạch tổ chức Thế vận hội Olympic ở nước này.</p>
+<p class="pg">Ngày 2/7, New South Wales, bang đông dân nhất của Australia, đã ghi nhận số ca nhiễm trong ngày tăng cao nhất từ đầu năm đến nay. Tổng số ca mắc Covid-19 ở New South Wales trong đợt bùng phát gần đây nhất đã lên tới 200 người, phần lớn do biến thể Delta gây ra.</p>
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    var t = $("#title"); // tương uong dom.getELementByid trong js
+    t.css({
+        "color":"red",
+        "font-size":"30px"
+    });
+    t.text("text sửa từ jquery sang") 
+    // tương tự có t.html
+    t.html("<i>la la la </i>");
+    
+    var ps = $(".pg"); // tương duong dom.getElementsByclass
+    function hidePg(){
+        // ps.hide(); // tương tự có các hảm ẩn hiện sau
+        ps.fadeOut(500);  // ps là biến var đã khai báo ở trên 500 đơn vị mili giây thời gian hiệu ứng
+    }
+
+    function showPg(){
+        // ps.show();
+        // ps.fadeIn(100);
+        ps.slideDown(300); 
+    }
+
+    function onOff(){
+        ps.toggle(); // bấm là tắt bấm nữa là bật như bật điện.
+        //tuong tự cũng có fade , slide
+        // ps.fadeToggle();
+        // ps.slideToggle();
+    }
+</script>
+</body>
+</html>
