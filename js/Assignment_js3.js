@@ -1,4 +1,3 @@
-
 loadpage();
 
 function loadpage(){
@@ -27,6 +26,7 @@ function loadpage(){
         }
     });
 }
+
 properties();
 function properties(){
     var p = [];
