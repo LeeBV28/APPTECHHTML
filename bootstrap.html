@@ -1,617 +1,763 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOOTSTRAP</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOTSTRAP</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Demo hiển thị khung phần tử cha container</h1>
-        <p>Hiện thị cách lề trình duyệt một khoảng (.container)</p>
-    </div>
-    <hr/>
-    <div class="container-fluid">
-        <h1>Demo hiển thị khung phần tử cha container</h1>
-        <p>Hiện thị sát lề trình duyệt(.container-fluid)</p>
-    </div>
-    <hr/>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-4">
-                <h1>test thử xs</h1>
-            </div>
-            <div class="col-xs-4">
-                <h1>test thử xs</h1>
-            </div>
-            <div class="col-xs-4">
-                <h1>test thử xs</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h1>test thử sm</h1>
-            </div>
-            <div class="col-sm-4">
-                <h1>test thử sm</h1>
-            </div>
-            <div class="col-sm-4">
-                <h1>test thử sm</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h1>test thử md</h1>
-            </div>
-            <div class="col-md-4">
-                <h1>test thử md</h1>
-            </div>
-            <div class="col-md-4">
-                <h1>test thử md</h1>
-            </div>
-        </div>
-    </div>
-
-    <hr/>
-
-    <div class="container">
-        <h1>Bootstrap Text / Typography</h1>
-        <h2>thẻ <code>mark</code></h2>
-            <p>Nó sẽ hiển thị chữ có nền màu cam như này: <mark>Đây là text viết trong cặp thẻ mark</mark></p>
-        <hr/>
-        <h2>thẻ <code>abbr</code></h2>
-            <p>Hiển thị doạn văn được gạch chân như này: <abbr title="World Health Organization">Text trong cặp abbr</abbr></p>
-        <hr/>
-        <h2>thẻ <code>blockquote</code></h2>
-            <p></p>
-        <hr/>
-        <h2>thẻ <code>pre</code></h2>
-        <pre>
-Đây là đoạn văn nằm trong <code>pre</code>
-            <p>Thử thêm một dòng <code>P</code> này nữa xem nó như thế nào nhé</p>
-            phải đặt text trong p nó mới sát với lề của pre nếu không là nó thụt như này bởi vì có nhiều dấu cách ở đầu dòng
-            văn bản trong cặp thẻ này sẽ hiển thị all dấu cách có trong đoan như đây là 10 cái dấu cách                này
-        </pre>
-        <hr/>
-        <h2>Còn nhiều vãi trửng tự lên <a href="https://www.w3schools.com/bootstrap/bootstrap_typography.asp">w3schools mà học nhé phần bs typography</a> hoặc là bảng tổng hợp <a href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp">CSS Typography</a> nhé!</h2>
-        
-    </div>
-    <hr/>
-    <div class="container">
-        <h2>table</h2>
-        <p>Hàng sẽ có màu xám khi di chuột vào</p>            
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
-            </tr>
-            <tr>
-              <td>Mary</td>
-              <td>Moe</td>
-              <td>mary@example.com</td>
-            </tr>
-            <tr>
-              <td>July</td>
-              <td>Dooley</td>
-              <td>july@example.com</td>
-            </tr>
-          </tbody>
-        </table>
+  <div class="container">
+    <h1>Demo hiển thị khung phần tử cha container</h1>
+    <p>Hiện thị cách lề trình duyệt một khoảng (.container)</p>
+  </div>
+  <hr />
+  <div class="container-fluid">
+    <h1>Demo hiển thị khung phần tử cha container</h1>
+    <p>Hiện thị sát lề trình duyệt(.container-fluid)</p>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <h1>test thử xs</h1>
       </div>
-      <div class="container">
-        <h2>Bảng Đáp Ứng</h2>
-        <p>Các .table-responsivelớp học tạo ra một bảng đáp ứng. Sau đó, bảng sẽ cuộn theo chiều ngang trên các thiết bị nhỏ (dưới 768px). Khi xem trên bất kỳ thứ gì có chiều rộng lớn hơn 768px, không có sự khác biệt:</p>                                                                                      
-        <div class="table-responsive">          
-        <table class="table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Age</th>
-              <th>City</th>
-              <th>Country</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Anna</td>
-              <td>Pitt</td>
-              <td>35</td>
-              <td>New York</td>
-              <td>USA</td>
-            </tr>
-          </tbody>
-        </table>
-        </div>
+      <div class="col-xs-4">
+        <h1>test thử xs</h1>
       </div>
-      <hr/>
-      <h1>BS IMAGES</h1>
-      <div class="container">
-        <h2>Hình ảnh đáp ứng</h2>
-        <p>để class.img-responsive và cấu hình ảnh đáp tỷ lệ của phần tử mẹ như display, max-width, width, height,  </p>
-        <img class="img-responsive" src="https://www.w3schools.com/bootstrap/img_chania.jpg" alt="Chania" width="460" height="345"> 
+      <div class="col-xs-4">
+        <h1>test thử xs</h1>
       </div>
-      <div class="container">
-        <div class="row">
-          <h2>Nhúng đáp ứng</h2>
-          <p>Ví dụ sau tạo video đáp ứng bằng cách thêm một .embed-responsive-itemlớp vào iframe thẻ (sau đó video sẽ chia tỷ lệ phù hợp với phần tử mẹ). Hàm chứa div xác định tỷ lệ khung hình của video:</p>
-          <div class="col-md-6">
-            <h2>Aspect ratio 4:3</h2>
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          </div>
-          </div>
-          <div class="col-md-6">
-            <h2>Aspect ratio 16:9</h2>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-          </div>
-          </div>  
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>test thử sm</h1>
+      </div>
+      <div class="col-sm-4">
+        <h1>test thử sm</h1>
+      </div>
+      <div class="col-sm-4">
+        <h1>test thử sm</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1>test thử md</h1>
+      </div>
+      <div class="col-md-4">
+        <h1>test thử md</h1>
+      </div>
+      <div class="col-md-4">
+        <h1>test thử md</h1>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="container">
+    <h1>Bootstrap Text / Typography</h1>
+    <h2>thẻ <code>mark</code></h2>
+    <p>Nó sẽ hiển thị chữ có nền màu cam như này: <mark>Đây là text viết trong cặp thẻ mark</mark></p>
+    <hr />
+    <h2>thẻ <code>abbr</code></h2>
+    <p>Hiển thị doạn văn được gạch chân như này: <abbr title="World Health Organization">Text trong cặp abbr</abbr></p>
+    <hr />
+    <h2>thẻ <code>blockquote</code></h2>
+    <p></p>
+    <hr />
+    <h2>thẻ <code>pre</code></h2>
+    <pre>
+      <p>Đây là đoạn văn nằm trong <code>pre</code></p>
+      <p>Thử thêm một dòng <code>P</code> này nữa xem nó như thế nào nhé</p>
+      <p>phải đặt text trong p nó mới sát với lề của pre nếu không là nó thụt như này bởi vì có nhiều dấu cách ở đầu dòng
+        văn bản trong cặp thẻ này sẽ hiển thị all dấu cách có trong đoan như đây là 10 cái dấu cách                này</p>
+    </pre>
+    <hr />
+    <h2>Còn nhiều vãi trửng tự lên <a href="https://www.w3schools.com/bootstrap/bootstrap_typography.asp">w3schools mà
+        học nhé phần bs typography</a> hoặc là bảng tổng hợp <a
+        href="https://www.w3schools.com/bootstrap/bootstrap_ref_css_text.asp">CSS Typography</a> nhé!</h2>
+
+  </div>
+  <hr />
+  <div class="container">
+    <h2>table</h2>
+    <p>Hàng sẽ có màu xám khi di chuột vào</p>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container">
+    <h2>Bảng Đáp Ứng</h2>
+    <p>Các .table-responsivelớp học tạo ra một bảng đáp ứng. Sau đó, bảng sẽ cuộn theo chiều ngang trên các thiết bị nhỏ
+      (dưới 768px). Khi xem trên bất kỳ thứ gì có chiều rộng lớn hơn 768px, không có sự khác biệt:</p>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Anna</td>
+            <td>Pitt</td>
+            <td>35</td>
+            <td>New York</td>
+            <td>USA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <hr />
+  <h1>BS IMAGES</h1>
+  <div class="container">
+    <h2>Hình ảnh đáp ứng</h2>
+    <p>để class.img-responsive và cấu hình ảnh đáp tỷ lệ của phần tử mẹ như display, max-width, width, height, </p>
+    <img class="img-responsive" src="https://www.w3schools.com/bootstrap/img_chania.jpg" alt="Chania" width="460"
+      height="345">
+  </div>
+  <div class="container">
+    <div class="row">
+      <h2>Nhúng đáp ứng</h2>
+      <p>Ví dụ sau tạo video đáp ứng bằng cách thêm một .embed-responsive-itemlớp vào iframe thẻ (sau đó video sẽ chia
+        tỷ lệ phù hợp với phần tử mẹ). Hàm chứa div xác định tỷ lệ khung hình của video:</p>
+      <div class="col-md-6">
+        <h2>Aspect ratio 4:3</h2>
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         </div>
       </div>
-        
-        <hr/>
-        <div class="container">
-            <div class="page-header">
-                <h1>.page header thêm một đƯờng ngang như hr dướng phần cùng</h1>      
+      <div class="col-md-6">
+        <h2>Aspect ratio 16:9</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+  <div class="container">
+    <div class="page-header">
+      <h1>.page header thêm một đƯờng ngang như hr dướng phần cùng</h1>
+    </div>
+    <p>This is some text.</p>
+    <p>This is another text.</p>
+  </div>
+  <hr />
+  <h1>alert (Cảnh Báo)</h1>
+  <div class="container">
+    <h2>Alerts</h2>
+    <div class="alert alert-success">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info">
+      <strong>Info!</strong> This alert box could indicate a neutral <a href="#">Lebv</a> informative change or action.
+    </div>
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger">
+      <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+  </div>
+  <div class="container">
+    <h1>Cảnh báo liên kết</h1>
+    <p>Thêm .alert-link vào trong cặp thẻ a để có thể hiển thị một link</p>
+    <div class="alert alert-success">
+      <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+    </div>
+  </div>
+  <div class="container">
+    <h1>Đóng thông báo</h1>
+    <p>Thêm .alert-dismissible và để có nút x đóng thông báo lại</p>
+    <div class="alert alert-success alert-dismissible">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info alert-dismissible">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-warning alert-dismissible">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger alert-dismissible">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+  </div>
+  <hr />
+  <h1>Button BS</h1>
+  <div class="container">
+    <h2>Button Styles</h2>
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-link">Link</button>
+  </div>
+  <div class="container">
+    <h2>Justified Button Groups</h2>
+    <p>To span the entire width of the screen, use the .btn-group-justified class:</p>
+    <div class="col-md-6">
+      <p>Nếu để nút ở dạng thẻ a chỉ cần viết các nút trong cặp <mark>.btn-group-justified</mark> </p>
+      <div class="btn-group btn-group-justified">
+        <a href="#" class="btn btn-primary">Apple</a>
+        <a href="#" class="btn btn-primary">Samsung</a>
+        <a href="#" class="btn btn-primary">Sony</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <p>Nếu dùng thẻ <code>Button</code> thì cần để các button trong cặp <code>div</code></p>
+      <div class="btn-group btn-group-justified">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">lebv</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-danger">Lebv28</button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-warning">levb228</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Nhóm Nút lồng nhau và menu thả xuống</h2>
+    <p>Dùng lệnh dưới đây để tạo menu thả xuống kết hợp với button lồng nhau</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Sony <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Tablet</a></li>
+          <li><a href="#">Smartphone</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <h1>Glyphicon</h1>
+  <div class="container">
+    <h2>Glyphicon Examples</h2>
+    <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
+    <p>Envelope icon as a link:
+      <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+    </p>
+    <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
+    <p>Search icon on a button:
+      <button type="button" class="btn btn-default">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </p>
+    <p>Search icon on a styled button:
+      <button type="button" class="btn btn-info">
+        <span class="glyphicon glyphicon-search"></span> Search
+      </button>
+    </p>
+    <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>
+    <p>Print icon on a styled link button:
+      <a href="#" class="btn btn-success btn-lg">
+        <span class="glyphicon glyphicon-print"></span> Print
+      </a>
+    </p>
+  </div>
+  <hr />
+  <h1>Nhãn và huy hiệu trong BS</h1>
+  <div class="container">
+    <h2>Huy Hiệu</h2>
+    <a href="#">News <span class="badge">5</span></a><br>
+    <a href="#">Comments <span class="badge">10</span></a><br>
+    <a href="#">Updates <span class="badge">2</span></a>
+  </div>
+  <div class="container">
+    <h1>Nhãn</h1>
+    <h1>Example <span class="label label-default">New</span></h1>
+    <h2>Example <span class="label label-default">New</span></h2>
+    <h3>Example <span class="label label-default">New</span></h3>
+    <h4>Example <span class="label label-default">New</span></h4>
+    <h5>Example <span class="label label-default">New</span></h5>
+    <h6>Example <span class="label label-default">New</span></h6>
+  </div>
+  <hr />
+  <h1>Phân Trang</h1>
+  <p>dùng <mark>.pagination</mark> hoặc <mark>.breadcrumbs</mark> trong thẻ <code>ul</code></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h2>Phân Trang cơ bản</h2>
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Trạn thái hoạt động</h2>
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li class="active"><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>trạng thái khuyết tật</h2>
+        <ul class="pagination">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li class="disabled"><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h2>Định cỡ phân trang</h2>
+        <ul class="pagination pagination-ls">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+        <ul class="pagination pagination-sm">
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>ví dụng dùng .breadcrumbs</h2>
+    <ul class="breadcrumb">
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+  </div>
+  <hr />
+  <h1>BS Pages</h1>
+  <div class="container">
+    <div class="row">
+      <h2>Để sử dụng thêm <mark>.pager</mark> vào phần tử <code>ul</code></h2>
+      <div class="col-md-6">
+        <h3>Cơ bản</h3>
+        <ul class="pager">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Căn chỉnh nút</h3>
+        <ul class="pager">
+          <li class="previous"><a href="#">Previous</a></li>
+          <li class="next"><a href="#">Next</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <h1>Menu thả xuống</h1>
+  <div class="container">
+    <div class="row">
+      <h2>Có 2 loại thả là thả xuống <marl>.dropdown</marl> và thả lên <mark>.dropup</mark></h2>
+      <h3>Giải thích các class</h3>
+      <p>Các <mark>.dropdown</mark> lớp cho thấy một trình đơn thả xuống.<br />
+
+        Để mở menu thả xuống, hãy sử dụng nút hoặc liên kết có loại <mark>.dropdown-toggle</mark> và
+        <mark>data-toggle="dropdown"</mark> thuộc tính. <br />
+
+        Các <mark>.caret</mark> lớp học tạo ra một Caret arrow icon (<span class="caret"></span>) chỉ ra rằng nút là một
+        trình đơn thả xuống. <br />
+
+        Thêm <mark>.dropdown-menu</mark> lớp vào một <code>ul</code> phần tử để thực sự xây dựng menu thả xuống.
+      </p>
+      <div class="col-md-2">
+        <h4>Menu thả xuống cơ bản</h4>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>Dải phân cách thả xuống</h4>
+        <p>thêm <mark>.divider</mark> vào thẻ <code>li</code></p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">BS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>tiêu đề thả xuống</h4>
+        <p>thêm <mar>.dropdown-header</mar> vào cặp thẻ <code>li</code></p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-hearder">Đây là haeder</li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>Trạng thái tắt hoạt động</h4>
+        <p>sử dụng class <mark>.active</mark> or <mark>.disabled</mark> trong thẻ <code>li</code></p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li class="disabled"><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>Vị trí thả xuống</h4>
+        <p>thêm <mark>.dropdown-menu-right|left</mark> vào thẻ <code>ul</code></p>
+        <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4>Khản năng truy cập thả xuống</h4>
+        <p>Để giúp cải thiện khả năng tiếp cận cho những người sử dụng trình đọc màn hình, nên them các thuộc tính
+          <mark>role</mark>à thông tin sau <mark>aria-*</mark> trong thẻ <code>ul</code>khi tạo menu thả xuống:
+        </p>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
+            <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
+            <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <h1>BS Thu Gọn</h1>
+  <div class="container">
+    <div class="row">
+      <h2>VD cơ bản</h2>
+      <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+      <div id="demo" class="collapse">
+        Đoạn text này sẽ được sổ ra or thu vào khi bấm nút.
+      </div>
+      <h3>Giải thích</h3>
+      <p>Các <mark>.collapse</mark> lớp học chỉ ra một yếu tố đóng mở nội dung trong <code>div</code> đây là nội dung sẽ
+        được hiển thị hoặc ẩn bằng một cú nhấp chuột. <br />
+
+        Để kiểm soát (hiển thị / ẩn) nội dung có thể thu gọn, hãy thêm <code>data-toggle="collapse"</code> vào thẻ
+        <code>a</code> hoặc <code>button</code>. Sau đó, thêm <code>data-target="#id"</code> thộc tính để kết nối nút
+        với nội dung có thể thu gọn (<code>div id = "demo"</code>). <br />
+
+        Lưu ý: Đối với các phần tử <code>a</code>, bạn có thể sử dụng <code>href</code> thộc tính thay vì
+        <code>data-target</code> thuộc tính:
+      </p>
+      <div class="col-md-3">
+        <h2>Theo mặc định nội dung bị ẩn để nội dụng mặc định hiện thêm <mark>.in</mark> vào cặp <code>div id</code>
+        </h2>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Simple
+          collapsible</button>
+        <div id="demo1" class="collapse in">
+          thêm in để mặc định cặp text này sổ ra
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>Bảng điều khiển thu gọn</h4>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#vd1">Collapsible panel</a>
+              </h4>
             </div>
-            <p>This is some text.</p>      
-            <p>This is another text.</p>      
-          </div>
-          <hr/>
-          <h1>alert (Cảnh Báo)</h1>
-          <div class="container">
-            <h2>Alerts</h2>
-            <div class="alert alert-success">
-              <strong>Success!</strong> This alert box could indicate a successful or positive action.
-            </div>
-            <div class="alert alert-info">
-              <strong>Info!</strong> This alert box could indicate a neutral <a href="#">Lebv</a> informative change or action.
-            </div>
-            <div class="alert alert-warning">
-              <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-            </div>
-            <div class="alert alert-danger">
-              <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+            <div id="vd1" class="panel-collapse collapse">
+              <div class="panel-body">Panel Body</div>
+              <div class="panel-footer">Panel Footer</div>
             </div>
           </div>
-          <div class="container">
-            <h1>Cảnh báo liên kết</h1>
-            <p>Thêm .alert-link vào trong cặp thẻ a để có thể hiển thị một link</p>
-            <div class="alert alert-success">                
-                <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
-              </div>
-          </div>
-          <div class="container">
-              <h1>Đóng thông báo</h1>
-              <p>Thêm .alert-dismissible và để có nút x đóng thông báo lại</p>
-              <div class="alert alert-success alert-dismissible">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Success!</strong> This alert box could indicate a successful or positive action.
-              </div>
-              <div class="alert alert-info alert-dismissible">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
-              </div>
-              <div class="alert alert-warning alert-dismissible">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
-              </div>
-              <div class="alert alert-danger alert-dismissible">
-                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-                <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
-              </div>
-          </div>
-          <hr/>
-          <h1>Button BS</h1>
-          <div class="container">
-            <h2>Button Styles</h2>
-            <button type="button" class="btn">Basic</button>
-            <button type="button" class="btn btn-default">Default</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-success">Success</button>
-            <button type="button" class="btn btn-info">Info</button>
-            <button type="button" class="btn btn-warning">Warning</button>
-            <button type="button" class="btn btn-danger">Danger</button>
-            <button type="button" class="btn btn-link">Link</button>      
-          </div>
-          <div class="container">
-            <h2>Justified Button Groups</h2>
-            <p>To span the entire width of the screen, use the .btn-group-justified class:</p>
-            <div class="col-md-6">
-              <p>Nếu để nút ở dạng thẻ a chỉ cần viết các nút trong cặp <mark>.btn-group-justified</mark> </p>            
-            <div class="btn-group btn-group-justified">
-              <a href="#" class="btn btn-primary">Apple</a>
-              <a href="#" class="btn btn-primary">Samsung</a>
-              <a href="#" class="btn btn-primary">Sony</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>nhom danh sách có thể thu gọn</h4>
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" href="#vd2">Collapsible list group</a>
+              </h4>
             </div>
-            </div>
-            <div class="col-md-6">
-              <p>Nếu dùng thẻ <code>Button</code> thì cần để các button trong cặp <code>div</code></p>
-                <div class="btn-group btn-group-justified">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-primary">lebv</button>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-danger">Lebv28</button>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-warning">levb228</button>
-                  </div>
-                </div>
+            <div id="vd2" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item">One</li>
+                <li class="list-group-item">Two</li>
+                <li class="list-group-item">Three</li>
+              </ul>
+              <div class="panel-footer">Footer</div>
             </div>
           </div>
-          <div class="container">
-            <h2>Nhóm Nút lồng nhau và menu thả xuống</h2>
-            <p>Dùng lệnh dưới đây để tạo menu thả xuống kết hợp với button lồng nhau</p>
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary">Apple</button>
-              <button type="button" class="btn btn-primary">Samsung</button>
-              <div class="btn-group">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Sony <span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Tablet</a></li>
-                  <li><a href="#">Smartphone</a></li>
-                </ul>
-              </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <h4>Accordion</h4>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#vd3">
+                  Collapsible Group 1</a>
+              </h4>
             </div>
-          </div>          
-          <hr/>
-          <h1>Glyphicon</h1>
-          <div class="container">
-            <h2>Glyphicon Examples</h2>
-            <p>Envelope icon: <span class="glyphicon glyphicon-envelope"></span></p>
-            <p>Envelope icon as a link:
-              <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
-            </p>
-            <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
-            <p>Search icon on a button:
-              <button type="button" class="btn btn-default">
-                <span class="glyphicon glyphicon-search"></span> Search
-              </button>
-            </p>
-            <p>Search icon on a styled button:
-              <button type="button" class="btn btn-info">
-                <span class="glyphicon glyphicon-search"></span> Search
-              </button>
-            </p>
-            <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>      
-            <p>Print icon on a styled link button:
-              <a href="#" class="btn btn-success btn-lg">
-                <span class="glyphicon glyphicon-print"></span> Print 
-              </a>
-            </p> 
-          </div>
-          <hr/>
-          <h1>Nhãn và huy hiệu trong BS</h1>
-          <div class="container">
-            <h2>Huy Hiệu</h2>
-            <a href="#">News <span class="badge">5</span></a><br>
-            <a href="#">Comments <span class="badge">10</span></a><br>
-            <a href="#">Updates <span class="badge">2</span></a>
-          </div>
-          <div class="container">
-            <h1>Nhãn</h1>
-            <h1>Example <span class="label label-default">New</span></h1>
-            <h2>Example <span class="label label-default">New</span></h2>
-            <h3>Example <span class="label label-default">New</span></h3>
-            <h4>Example <span class="label label-default">New</span></h4>
-            <h5>Example <span class="label label-default">New</span></h5>
-            <h6>Example <span class="label label-default">New</span></h6>
-          </div>
-          <hr/>
-          <h1>Phân Trang</h1>
-          <p>dùng <mark>.pagination</mark> hoặc <mark>.breadcrumbs</mark> trong thẻ <code>ul</code></p>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                <h2>Phân Trang cơ bản</h2>
-                <ul class="pagination">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2>Trạn thái hoạt động</h2>
-                <ul class="pagination">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li class="active"><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2>trạng thái khuyết tật</h2>
-                <ul class="pagination">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li class="disabled"><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
-              </div>
-              <div class="col-md-3">
-                <h2>Định cỡ phân trang</h2>
-                <ul class="pagination pagination-ls">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
-                <ul class="pagination pagination-sm">
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                </ul>
-              </div>
+            <div id="vd3" class="panel-collapse collapse in">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
             </div>
           </div>
-          <div class="container">
-            <h2>ví dụng dùng .breadcrumbs</h2>
-            <ul class="breadcrumb">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#vd3-1">
+                  Collapsible Group 2</a>
+              </h4>
+            </div>
+            <div id="vd3-1" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#vd3-2">
+                  Collapsible Group 3</a>
+              </h4>
+            </div>
+            <div id="vd3-2" class="panel-collapse collapse">
+              <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <h1>Munu nav</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Thêm <mark>.nav</mark> vào thẻ <code> ul </code></h2>
+        <P> có 2 style là <mark>.nav-pills</mark> và <mark>.nav-tabs</mark></P>
+        <p> để active li nào thêm <marl>.active</marl> vào thẻ <code>li</code> đó</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h1>nav nav-tabs</h1>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+        </ul>
+        <p>muốn active thẻ nào them <mark>.active</mark> vào li đó</p>
+      </div>
+      <div class="col-md-3">
+        <h1>nav nav-pills</h1>
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>  
+      <div class="col-md-3">
+        <h1>nav có menu thả xuống</h1>
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Submenu 1-1</a></li>
+              <li><a href="#">Submenu 1-2</a></li>
+              <li><a href="#">Submenu 1-3</a></li>
             </ul>
+          </li>
+          <li><a href="#">Menu 2</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h1>nav dọc</h1>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>NAV có cac tab được căn giữ</h1>
+        <h2> Thêm <code>.nav-justified</code> vào <code> ul </code></h2>
+      </div>
+      <div class="col-md-6">
+        <h1>Chiều ngang</h1>
+        <ul class="nav nav-tabs nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h1>Chiều dọc</h1>
+        <ul class="nav nav-pills nav-justified">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Nav chuyển đổi động</h1>
+      <div class="col-md-6">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+          <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+          <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
           </div>
-          <hr/>
-          <h1>BS Pages</h1>
-          <div class="container">
-            <div class="row">
-              <h2>Để sử dụng thêm <mark>.pager</mark> vào phần tử <code>ul</code></h2>
-              <div class="col-md-6">
-                <h3>Cơ bản</h3>
-                <ul class="pager">
-                  <li><a href="#">Previous</a></li>
-                  <li><a href="#">Next</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <h3>Căn chỉnh nút</h3>
-                <ul class="pager">
-                  <li class="previous"><a href="#">Previous</a></li>
-                  <li class="next"><a href="#">Next</a></li>
-                </ul>
-              </div>
-            </div>
+          <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
           </div>
-          <hr/>
-          <h1>Menu thả xuống</h1>
-          <div class="container">
-            <div class="row">
-              <h2>Có 2 loại thả là thả xuống <marl>.dropdown</marl> và thả lên <mark>.dropup</mark></h2>
-              <h3>Giải thích các class</h3>
-              <p>Các <mark>.dropdown</mark> lớp cho thấy một trình đơn thả xuống.<br/>
-
-                Để mở menu thả xuống, hãy sử dụng nút hoặc liên kết có loại <mark>.dropdown-toggle</mark> và <mark>data-toggle="dropdown"</mark> thuộc tính. <br/>
-                
-                Các <mark>.caret</mark> lớp học tạo ra một Caret arrow icon (<span class="caret"></span>) chỉ ra rằng nút là một trình đơn thả xuống. <br/>
-                
-                Thêm <mark>.dropdown-menu</mark> lớp vào một <code>ul</code> phần tử để thực sự xây dựng menu thả xuống.</p>
-              <div class="col-md-2">
-                <h4>Menu thả xuống cơ bản</h4>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h4>Dải phân cách thả xuống</h4>
-                <p>thêm <mark>.divider</mark> vào thẻ <code>li</code></p>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                    <li  class="divider"></li>
-                    <li><a href="#">BS</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h4>tiêu đề thả xuống</h4>
-                <p>thêm <mar>.dropdown-header</mar> vào cặp thẻ <code>li</code></p>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-hearder">Đây là haeder</li>
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h4>Trạng thái tắt hoạt động</h4>
-                <p>sử dụng class <mark>.active</mark> or <mark>.disabled</mark> trong thẻ <code>li</code></p>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li class="active"><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li class="disabled"><a href="#">JavaScript</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h4>Vị trí thả xuống</h4>
-                <p>thêm <mark>.dropdown-menu-right|left</mark> vào thẻ <code>ul</code></p>
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-2">
-                <h4>Khản năng truy cập thả xuống</h4>
-                <p>Để giúp cải thiện khả năng tiếp cận cho những người sử dụng trình đọc màn hình, nên them các thuộc tính <mark>role</mark>à thông tin sau <mark>aria-*</mark> trong thẻ <code>ul</code>khi tạo menu thả xuống:</p>
-                <div class="dropdown">
-                  <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                    <li role="presentation"><a role="menuitem" href="#">HTML</a></li>
-                    <li role="presentation"><a role="menuitem" href="#">CSS</a></li>
-                    <li role="presentation"><a role="menuitem" href="#">JavaScript</a></li>
-                    <li role="presentation" class="divider"></li>
-                    <li role="presentation"><a role="menuitem" href="#">About Us</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
           </div>
-          <hr/>   
-          <h1>BS Thu Gọn</h1>
-          <div class="container">
-            <div class="row">
-              <h2>VD cơ bản</h2>
-              <button data-toggle="collapse" data-target="#demo">Collapsible</button>
-              <div id="demo" class="collapse">
-              Đoạn text này sẽ được sổ ra or thu vào khi bấm nút.
-              </div>
-              <h3>Giải thích</h3>
-              <p>Các <mark>.collapse</mark> lớp học chỉ ra một yếu tố đóng mở nội dung trong <code>div</code> đây là nội dung sẽ được hiển thị hoặc ẩn bằng một cú nhấp chuột. <br/>
-
-                Để kiểm soát (hiển thị / ẩn) nội dung có thể thu gọn, hãy thêm <code>data-toggle="collapse"</code> vào thẻ <code>a</code> hoặc <code>button</code>. Sau đó, thêm <code>data-target="#id"</code> thộc tính để kết nối nút với nội dung có thể thu gọn (<code>div id = "demo"</code>). <br/>
-                
-                Lưu ý: Đối với các phần tử <code>a</code>, bạn có thể sử dụng <code>href</code> thộc tính thay vì <code>data-target</code> thuộc tính:</p>
-                <div class="col-md-3">
-                  <h2>Theo mặc định nội dung bị ẩn để nội dụng mặc định hiện thêm <mark>.in</mark> vào cặp <code>div id</code> </h2>
-                  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Simple collapsible</button>
-                  <div id="demo1" class="collapse in">
-                    thêm in để mặc định cặp text này sổ ra
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <h4>Bảng điều khiển thu gọn</h4>
-                  <div class="panel-group">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" href="#vd1">Collapsible panel</a>
-                        </h4>
-                      </div>
-                      <div id="vd1" class="panel-collapse collapse">
-                        <div class="panel-body">Panel Body</div>
-                        <div class="panel-footer">Panel Footer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <h4>nhom danh sách có thể thu gọn</h4>
-                  <div class="panel-group">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" href="#vd2">Collapsible list group</a>
-                        </h4>
-                      </div>
-                      <div id="vd2" class="panel-collapse collapse">
-                        <ul class="list-group">
-                          <li class="list-group-item">One</li>
-                          <li class="list-group-item">Two</li>
-                          <li class="list-group-item">Three</li>
-                        </ul>
-                        <div class="panel-footer">Footer</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <h4>Accordion</h4>
-                  <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#vd3">
-                          Collapsible Group 1</a>
-                        </h4>
-                      </div>
-                      <div id="vd3" class="panel-collapse collapse in">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.</div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#vd3-1">
-                          Collapsible Group 2</a>
-                        </h4>
-                      </div>
-                      <div id="vd3-1" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.</div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#vd3-2">
-                          Collapsible Group 3</a>
-                        </h4>
-                      </div>
-                      <div id="vd3-2" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>                
-            </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-pills">
+          <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+          <li><a data-toggle="pill" href="#menu11">Menu 1</a></li>
+          <li><a data-toggle="pill" href="#menu22">Menu 2</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <h3>HOME</h3>
+            <p>Some content.</p>
           </div>
-          <hr/>
-          
-
+          <div id="menu11" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>Some content in menu 1.</p>
+          </div>
+          <div id="menu22" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>Some content in menu 2.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <h1> Form BS</h1>
+  
 </body>
 </html>
