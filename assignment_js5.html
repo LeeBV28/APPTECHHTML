@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Js5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1>Nhiệt Độ: <span id="temp"></span><sup>o</sup>C</h1>
+                    </div>
+                    <div class="col-md-8">
+                        <p>Humidity: <span id="hum"></span>%</p>
+                        <p>Wind: <span id="wind"></span> Km/h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h1><span id="name"></span>, <span id="country"></span></h1>
+                <h3><span id="dt_text"></span></h3>
+                <h4 id="description"></h4>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 30px">
+        <div class="row" id="ct">
+            
+        </div>
+
+    </div>
+
+<!-- Script -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var p = [];
+        $.ajax({
+            url: "http://api.openweathermap.org/data/2.5/forecast",
+            method: "GET",
+            data: {
+                q: "Hanoi,vietnam",
+                appid: "09a71427c59d38d6a34f89b47d75975c",
+                units: "metric",
+            },
+            success: function(rs){
+                p = rs.list;
+                $("#temp").text(p[0].main.temp);
+                $("#hum").text(p[0].main.humidity);
+                $("#wind").text(p[0].wind.speed);
+                $("#name").text(rs.city.name);
+                $("#country").text(rs.city.country);
+                $("#dt_text").text(p[0].dt_txt);
+                $("#description").text(p[0].weather[0].description);
+                for(var i=1; i<7;i++){
+                    var ct = "<div class=\"col text-center\">\n" +
+                        "                <P>"+p[i].dt_txt+"</P>\n" +
+                        "                <h2 style='height: 80px;'>"+p[i].weather[0].description+"</h2>\n" +
+                        "                <div class=\"row\">\n" +
+                        "                    <div class=\"col\">\n" +
+                        "                        <p>"+p[i].main.temp_max+"<sup>o</sup>C</p>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"col\">\n" +
+                        "                        <P>"+p[i].main.temp_min+"<sup>o</sup>C</P>\n" +
+                        "                    </div>\n" +
+                        "                </div>\n" +
+                        "            </div>";
+                    $("#ct").append(ct);
+                }
+
+                // console.log(p);
+
+            }
+        });
+    
+    </script>
+</body>
+</html>
