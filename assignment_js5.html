@@ -10,6 +10,17 @@
 <body>
     <div class="container">
         <div class="row">
+            <select name="city" >
+                <option value="hanoi,vietnam">Hà Nội,VN</option>
+                <option value="saigon,vietnam">Sài Gòn, VN</option>
+                <option value="danang,vietnam">Đà Nẵng, VN</option>
+                <option value="london,uk">London, UK</option>
+                <option value="new york,us">New York, US</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="alert alert-info text-center">
                <h1>Thời Tiết Ngày: <span id="today"></span></h1>
               </div>
@@ -66,6 +77,9 @@
                 $("#dt_text").text(p[0].dt_txt);
                 $("#description").text(p[0].weather[0].description);
                 for(var i=1; i<7;i++){
+                    var url_icon = "http://openweathermap.org/img/wn/03d@2x.png"
+                    var icon_wether = p[i].weather;
+                    url_icon = "http://openweathermap.org/img/wn/"+icon_wether[0].icon+"@2x.png"
                     var ct = "<div class=\"col text-center\">\n" +
                         "                <P>"+p[i].dt_txt+"</P>\n" +
                         "                <h2 style='height: 80px;'>"+p[i].weather[0].description+"</h2>\n" +
@@ -86,7 +100,51 @@
             }
         });
     
+    $("select[name=city]").bind("change",function (){
+        var city = $(this).val();
+        var p = [];
+        $.ajax({
+            url: "http://api.openweathermap.org/data/2.5/forecast",
+            method: "GET",
+            data: {
+                q:city,
+                appid: "09a71427c59d38d6a34f89b47d75975c",
+                units: "metric",
+            },
+            success: function(rs){
+                p = rs.list;
+                $("#temp").text(p[0].main.temp);
+                $("#hum").text(p[0].main.humidity);
+                $("#wind").text(p[0].wind.speed);
+                $("#name").text(rs.city.name);
+                $("#country").text(rs.city.country);
+                $("#dt_text").text(p[0].dt_txt);
+                $("#description").text(p[0].weather[0].description);
+                $("#ct").html("");
+                for(var i=1; i<7;i++){
+                    var url_icon = "http://openweathermap.org/img/wn/03d@2x.png"
+                    var icon_wether = p[i].weather;
+                    url_icon = "http://openweathermap.org/img/wn/"+icon_wether[0].icon+"@2x.png"
+                    var ct = "<div class=\"col text-center\">\n" +
+                        "                <P>"+p[i].dt_txt+"</P>\n" +
+                        "                <h2 style='height: 80px;'>"+p[i].weather[0].description+"</h2>\n" +
+                        "                <div class=\"row\">\n" +
+                        "                    <div class=\"col\">\n" +
+                        "                        <p>"+p[i].main.temp_max+"<sup>o</sup>C</p>\n" +
+                        "                    </div>\n" +
+                        "                    <div class=\"col\">\n" +
+                        "                        <P>"+p[i].main.temp_min+"<sup>o</sup>C</P>\n" +
+                        "                    </div>\n" +
+                        "                </div>\n" +
+                        "            </div>";
+                    $("#ct").append(ct);
+                }
 
+                // console.log(p);
+
+            }
+        });
+    });
     var today = new Date();
     var date = today.getDate()+"-"+(today.getMonth()+1)+"-"+today.getFullYear();
     $("#today").text(date);
