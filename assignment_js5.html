@@ -10,6 +10,13 @@
 <body>
     <div class="container">
         <div class="row">
+            <div class="alert alert-info text-center">
+               <h1>Thời Tiết Ngày: <span id="today"></span></h1>
+              </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
             <div class="col">
                 <div class="row">
                     <div class="col-md-4">
@@ -79,6 +86,10 @@
             }
         });
     
+
+    var today = new Date();
+    var date = today.getDate()+"-"+(today.getMonth()+1)+"-"+today.getFullYear();
+    $("#today").text(date);
     </script>
 </body>
 </html>
