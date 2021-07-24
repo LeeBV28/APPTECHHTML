@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="#">Input number</label>
+    <input type="number" min="0" max="99" name="input" id="luckyNumber">
+    <button type="button" onclick="inputNumber()">Submit</button>
+
+    <script>
+        var randomNumber = [];
+        while(randomNumber.length<5){
+            var n = parseInt(Math.random()*100);
+            if(!randomNumber.includes(n)){
+                randomNumber.push(n);
+            }
+        }
+        console.log(randomNumber);
+        var luckyNumber = [];
+        function inputNumber(){
+            var input = document.getElementById("luckyNumber");
+            var n = parseInt(input.value);
+            if(!luckyNumber.includes(n) && luckyNumber.length<5 && n >0 && n <=99 ){
+                luckyNumber.push(n)
+                alert("bạn vừa nhập số: " + n)
+            }
+            if(luckyNumber.length==5){
+                var count = 0;
+                for(var i=0; i<5; i++){
+                    if(randomNumber[i] == luckyNumber[i]){
+                        count++;
+                    }
+                }
+                switch(count){
+                    case 3: alert("Chúc mừng bạn đã chúng 500k");
+                    case 4: alert("Chúc mừng bạn đã chúng 20tr");
+                    case 5: alert("Chúc mừng bạn đã chúng 20 tỏi");
+                    default: alert("Chúc bạn may mắn lần sau");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h1>Nhiệt Độ: <span id="temp"></span><sup>o</sup>C</h1>
+                    </div>
+                    <div class="col">
+                        <p>Humidity: <span id="hum"></span>%</p>
+                        <p>Wind: <span id="wind"></span>Km/h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h1><span id="name"></span>, <span id="contry"></span></h1>
+                <p><span id="des"></span></p>
+            </div>
+            <input type="text" onkeydown="test_abc(this)" id="input" name="city">
+        </div>
+    </div>
+    
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        function test_abc(e){
+            var n = e.value;            
+            // console.log(n);
+            return n;
+        }
+        
+        ajax();
+        var m = test_abc(e);
+        console.log(m);
+        function ajax(){         
+            $.ajax({
+                url: "https://api.openweathermap.org/data/2.5/weather",
+                method: "GET",
+                data:{
+                    q:"hanoi,vietnam",
+                    units:"metric",
+                    appid:"09a71427c59d38d6a34f89b47d75975c",
+                },
+                success: function(rs){
+                    // console.log(rs);
+                    $("#temp").text(rs.main.temp);
+                    $("#hum").text(rs.main.humidity);
+                    $("#wind").text(rs.wind.speed);
+                    $("#name").text(rs.name);
+                    $("#contry").text(rs.sys.country);
+                    $("#des").text(rs.weather[0].description);
+                    console.log(rs.sys.country);
+
+                }
+            });
+        }
+    </script>
+</body>
+</html>

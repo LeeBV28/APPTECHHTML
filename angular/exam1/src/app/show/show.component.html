@@ -1,0 +1,11 @@
+<button (click)="fakedata()">Add Data</button>
+<input [(ngModel)]="name">
+<br/>
+<h2>CGV CINEMA</h2>
+Movies List
+<div *ngFor="let movie of movies">
+    <li>{{movie}}</li>
+</div>
+<select>
+    <option *ngFor="let movie of movies">{{movie}}</option>
+</select>
