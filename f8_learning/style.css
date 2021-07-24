@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+}
+/* h1 {
+    color: aqua !important;
+} */
+
+/* Đặt biến */
+/* biến global dùng thẻ giả root */
+:root {
+    --text-color: red;
+}
+li.global{
+    color: var(--text-color);
+}
+li.local{
+    --color: blue;
+    color: var(--color);
+    
+}
+/* Lớp giả phần tử psuedo-elements */
+.box{
+    background-color: violet;
+    width: 50vw;
+    height: 100px;
+}
+.box::before{    
+    content: "Đây là before";
+    display: block;
+    background-color: #fff;
+    width: 90px;
+    height: 20px;
+}
+.box::after{
+    content: "Đây là after";
+    display: block;
+    background-color: #fff;
+    width: 90px;
+    height: 20px;
+}
+.fist-letter p::first-letter{
+    font-size: 50px;
+}
+.fist-line::first-line{
+    color: red;
+}
+.selection::selection{
+    background-color: var(--bs-orange);
+    color: var(--bs-white);
+}
+/* Background */
+.header{
+    background-color: #333;
+    width: 100%;
+    height: 150px;
+    padding: 20px;  
+    color: #fff;  
+    margin: 20px 0;
+    border: 15px dashed gray;
+}
+.header.clip{
+    
+}
+.header.clip2{
+    background-clip: padding-box;
+}
+.header.clip3{
+    background-clip: content-box;
+}

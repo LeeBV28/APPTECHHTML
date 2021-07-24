@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Các mức độ ưu tiên</h1>
+    <div class="container">
+        <ol>
+            <li>!important có mức độ ưu tiên cao nhất (thêm !important vào cuối thuộc tính style vd: color: <mark>aqua !important;</mark>) </li>
+            <li>inline (là thuộc tính ccs viết trực tiếp vào dòng HTML</li>
+            <li>id</li>
+            <li>class</li>
+            <li>tag chính css các thẻ </li>
+            <li>Nếu để 2 thuộc tính giống nhau sẽ ưu tiên css được viết sau</li>
+        </ol>
+    </div>
+    <hr/>
+    <h1 class="datbien">
+        Các đặt biến --tên biến
+    </h1>
+    <div class="container">
+        <h2>Có 2 loại biến là global và local</h2>
+        <ol>
+            <li>global: Dùng thẻ giả :root{--biến}</li>
+            <li>local: Đạt biến ngay trong thẻ chọn</li>
+        </ol>
+        <p> VD xem ở css</p>
+        <ol>
+            <li class="global">biến global</li>
+            <li class="local">biến local</li>
+        </ol>
+    </div>
+    <hr/>
+    <h1>Đơn Vị</h1>
+    <div class="container">
+        <h2>
+            Đơn Vị Tuyệt Đối: 
+        </h2>
+        <p>là đơn vị luôn hiển thị như vậy không thay đổi theo kích thước trình duyệt hay thẻ chứa nó</p>
+        <p>Sửa dụng chủ yếu là PX</p>
+        <h2>Đơn Vị Tương Đối</h2>
+        <p>Là đơn vị thay đổi theo kích thước trình duyệt hay thẻ chứa nó</p>
+        <ol>
+            <li><b>%:</b> Hiển thị theo % thẻ chứa nó</li>
+            <li><b>rem:</b> Hiển thị theo số nhân với thẻ html: VD; thẻ html để font-size là 14px, thẻ h2 để font-size là 2rem thì font-size thẻ h2 = 2*14 = 28px</li>
+            <li><b>em:</b> Tương thị rem nhưng bằng số lần của thẻ chứa nó</li>
+            <li><b>vw và vh:</b> v = viewport là kích thước khung nhìn, w,h lần lượt là with và height vd: 50vw là bằng 50% kích thước của trình duyệt</li>
+        </ol>
+    </div>
+    <hr/>
+    <h1>CSS Functions (Hàm)</h1>
+    <div class="container">
+        <h2>var()</h2>
+        <p>sử dụng để gọi một biến đặt trước</p>
+        <p>vd như biến màu ổ trên</p>
+        <h2>linear-gradient()</h2>
+        <h2>rgba()</h2>
+        <h2>rgb()</h2>
+        <p>sử dụng để hiện thị màu rgb</p>
+        <h2>calc()</h2>
+        <p>sử dụng để tính toán cộng trừ nhân chia VD: width: calc(20px +20%)</p>
+        <h2>attr:</h2>
+        <p> Actribiul trong thẻ html: Dùng để hiển thị các actribiul</p>
+    </div>
+    <hr/>
+    <h1>CSS pseudo-class (lớp giả)</h1>
+    <div class="container">
+        <p>cách dùng :name name là tên lớp giả</p>
+        <h2>:root</h2>
+        <p>Tham chiếu đến phần tử lớn nhất bao trùm html mặc định chính là thẻ htmk</p>
+        <h2>:hover</h2>
+        <p>kích hoạt khi di chuột vào</p>
+        <h2>:active</h2>
+        <p>kích hoạt khi bấm chuột or giữ chuột</p>
+        <h2>:fist-child & last-child</h2>
+        <p>sử dụng lớp giả để chọn thẻ đầu tiên hoặc cuối cùng</p>
+        <p>VD: trong ul là li vậy li là con của ul. sử dụng <b>li:fist-child</b> để chọn thẻ li đầu tiên và <b>li:last-child</b> để chọn li cuối cùng</p>
+    </div>
+    <hr/>
+    <h1>CSS pseudo-elements (phần tử giả)</h1>
+    <div class="container">
+        <p>các dùng <b>::name</b> </p>
+        <h2><b>::before & ::after</b> luôn hiện một thẻ giả đầu tiên or cuối cùng trong cặp thẻ </h2>
+        <p>trong ::before, ::after luôn phải có thuộc tính <b>conten: "";</b> và <b>display: ;</b> </p>
+        vd:
+        <div class="box">
+            <div>::before luôn xuất hiện trước thẻ này</div>
+            <div>và cả thẻ này</div>
+            <div>con affter luôn ở cuối</div>
+        </div>
+        <br/>
+        <h2><b>::fist-letter @ ::fist-line</b></h2>
+        <p>::fist-letter chọn chữa cái đầu tiên</p>
+        <p>::fist-line chọn dòng đầu tiên</p>
+        <div class="fist-letter">
+            <p>Dùng ::fist-letter cho font-size tăng lên và chỉ có tác dụng với thẻ k có tác dụng với class</p>
+        </div>
+        <div class="fist-line">
+            <p>Dòng đâu tiên được chọn và cho color: red; <br/>
+            còn đây là dòng thứ 2 được viết trong cùng một thẻ p</p>
+        </div>
+        <br/>
+        <h2><b>:;selection</b></h2>
+        <p>sảy ra khi bôi chuột vào</p>
+        <p class="selection">
+            bôi chuột vào đây sẽ có nền màu xanh và cữa màu trắng
+        </p>
+    </div>
+    <hr/>
+    <h1>box-sizing</h1>
+    <div class="container">
+        <p>VD có 1 box nếu ta để pading + border thì kích thưởng tổng thể khối sẽ tăng lên để giữ nguyên được kích thước ta thêm cho nó hiệu ứng box-sizing: border-box</p>
+        <p>bootstrap sẽ tự động sét box-sizing: border-box;</p>
+    </div>
+    <hr/>
+    <h1>Background</h1>
+    <div class="container">
+        <h2>Background-clip</h2>
+        <div class="header clip">
+            <p>Background-clip: quyết định Background sẽ từ phần tử nào. mặc định từ viền ngoài border</p>
+            <p>đây không để Background-clip</p>
+            <p>nếu Background-image cần dùng background-origin</p>
+        </div>
+        <div class="header clip2">
+            <p>có Background-clip: padding-box</p>
+        </div>
+        <div class="header clip3">
+            <p>có Background-clip: conten-box</p>
+        </div>
+        <h2>Background-image</h2>
+        <p>có thể để 2 ảnh trồng lên nhau, cách nhau bằng dấu , vd url(), url();</p>
+        <p>đi kèm với các thuộc tính: size, repeat</p>
+        <p>mặc định ảnh sẽ repeat lap lại ảnh</p>
+        <hr>
+        <h2>background-size</h2>
+        <ol>
+            <li><b>contain:</b> Lấy kích thước dài nhất. Luôn kéo ảnh theo một chiều width hoặc height chiều nào dài hơn sẽ lấy theo ảnh sẽ hiển thị 100% ảnh trên màn hình</li>
+            <li><b>cover:</b> Sẽ phóng to ảnh để ảnh vẫn giữ nguyên kích thước nhưng hiển thị kín viewport</li>
+        </ol>
+        <hr>
+        <h2>background-origin</h2>
+        <p>tương tự Background-clip nhưng hiệu lực với Background-image</p>
+        <hr>
+        <h2>background-position</h2>
+        <p>chỉnh vị trí của ảnh</p>
+        <p>có thế điền giá trị tuyệt đối, tương đối hay top right</p>
+    </div>
+    <hr>
+    <h1>CSS Position</h1>
+    <p>vị trí hiển thị</p>
+    <div class="container">
+        <h2>Position: relative;</h2>
+        <p>lấy vị trí chính nó làm gốc và thay đổi vị trí dựa vào các thuộc tính top-botton, left-right</p>
+        <hr>
+        <h2>Position: Absolute</h2>
+        <p>vị trí tuyệt đối: lấy gốc toạ độ là thẻ cha gần nhất cho position</p>
+        <hr>
+        <h2>Position: Fixed;</h2>
+        <p>Luôn giữ vị trí theo trình duyệt</p>
+    </div>
+</body>
+</html>
