@@ -71,3 +71,106 @@ li.local{
 .header.clip3{
     background-clip: content-box;
 }
+
+/* VD responsive */
+.vd-ressponsive {
+    height: 400px;
+    background-color: rgb(0, 0, 0);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile, .tablet, .pc{
+    margin: auto;
+    font-size: 20px;
+    color: #fff;
+    display: none;
+}
+@media only screen and (max-width: 46.1875em){
+    .mobile{
+        display: block;
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+    .tablet{
+        display: block;
+    }
+}
+@media only screen and (min-width: 64em){
+    .pc{
+        display: block;
+    }
+}
+
+/* Tạo NAV có Responsive và ẩn hiện bằng input */
+.nav-responsive{
+    height: 500px;
+    background-color: gray;
+    position: relative;
+}
+.nav-header {
+    height: 46px;
+    background-color: black;   
+}
+.nav-header, .nav-container{
+    padding: 10px;    
+    color: #fff;
+}
+.nav-header-container {
+    padding: 0;
+}
+.nav-header-container li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+.nav-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+}
+.nav-header-mobile{
+    background-color: #fff;
+    color: black;
+    width: 200px;
+    max-width: 320px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -41%;
+    transform: translateX(-100%);
+    z-index: 99999999999999;
+    padding: 20px 0;
+}
+.nav-header-mobile .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    padding: 10px;
+}
+.nav-header .menu {
+    display: none;
+}
+.nav-header input:checked ~ .nav-overlay{
+    display: block;
+}
+.nav-header input:checked ~ .nav-header-mobile {
+    transform: translateX(100%);
+}
+/* xây cho điện thoại */
+@media (max-width: 740px){
+    .nav-header-container {
+        display: none;
+    }
+    .nav-header .menu{
+        display: block;
+    }
+}

@@ -164,5 +164,81 @@
         <h2>Position: Fixed;</h2>
         <p>Luôn giữ vị trí theo trình duyệt</p>
     </div>
+    <hr>
+    <h1>Responsive web (thiết kế web theo các kiểu giao diện)</h1>
+    <div class="container">
+        <h2>Cú pháp viết trong css</h2>
+        <p><b>@media keywords mediatype and (mediafeature and|or|not mediafeature {<br> CSS Code; <br> }</b></p>
+        <p><b>1. Keywords</b></p>
+        <p>
+            <b>not: </b>Loại Trừ vd có A, B, C not A loại trừ A áp dụng lên B, C <br>
+            <b>only: </b>Chỉ đây là chế độ mặc định nếu không chỉ thị <br>
+            <b>and: </b> Và <br>
+            <b>or: </b>Hoặc <br>
+        </p>
+        <p><b>2. mediatype</b></p>
+        <p>
+            <b>Print: </b> CSS cho chế độ in <br>
+            <b>Screen: </b> Css cho màn hình <br>
+            <b>all - default:</b> Chế độ mặc định tất cả các mediatype <br>
+            <b>speech:</b> Mà hình hói thường dành cho đối tượng khuết tật
+        </p>
+        <p><b>3. mediafeature</b> Được viết trong cặp ()</p>
+        <p>
+            <b>min-width: </b>kích thước tối thiếu hay còn hiểu là ap dụng cho những màn hình tối thiểu giá trị min-width <br>
+            <b>max-width: </b>Kích thước tối đa: áp dụng cho những kích thước nhỏ hơn hoặc bằng max-width
+        </p>
+        <h2>VD: @media only screen and (max-width:1024px) { <br> CSS code; <br> } </h2>
+        <h2>VD (thu phóng màn hình để xem. CSS ở file style.css</h2>
+        <div class="vd-ressponsive">
+            <div class="mobile"> Mobile
+                <p>width < 740px</p>
+            </div>
+            <div class="tablet">Tablet
+                <p>width >= 740px và width < 1024px </p>
+            </div>
+            <div class="pc">PC
+                <p>width >= 1024px </p>
+            </div>
+        </div>
+        <hr>
+        <h1>Tạo NAV có Responsive và ẩn hiện bằng input</h1>
+        <p>Đựa vào đặc tính input check box và label</p>
+        <div class="nav-responsive">
+            <div class="nav-header">
+                <ul class="nav-header-container">
+                    <li class="nav-header-iteam">Home</li>
+                    <li class="nav-header-iteam">Contact</li>
+                    <li class="nav-header-iteam">Description</li>
+                    <li class="nav-header-iteam">Price</li>
+                    <li>
+                        
+                    </li>                    
+                </ul>
+                <input hidden type="checkbox" id="nav-responsive-check">
+                <label class="menu" for="nav-responsive-check">Menu</label>
+                <ul class="nav-header-mobile">
+                    <!-- <input hidden type="checkbox" id="nav-responsive-check"> -->
+                    <li class="nav-header-iteam">Home</li>
+                    <li class="nav-header-iteam">Contact</li>
+                    <li class="nav-header-iteam">Description</li>
+                    <li class="nav-header-iteam">Price</li>
+                    <label for="nav-responsive-check"    class="close">Close</label>
+                </ul>
+                <label for="nav-responsive-check" class="nav-overlay"></label>
+            </div>
+            <div class="nav-container">
+                <h3>Giải thich </h3>
+                <p>lợi dụng cơ chế checkbox kèm ID của thẻ <b>input</b>: khi thẻ input có id = a và thẻ laber có for = a thì khi bấm vào laber thì checkbox sẽ được check</p>
+                <p>như vậy ta để lớp nav-overlay và nút menu, nút close đều là laber có for bằng id của input (a) thì khi bấm vào các đối tượng àny checkbox sẽ nhận thông tin</p>
+                <p>sửa dụng lớp giả của input là checked và chỉ dẫn đến các thẻ có tác dụng với nút ~ (cụ thể ở css)</p>
+                <p>.nav-header input:checked ~ .nav-overlay{
+                    display: block;
+                }
+                kgi mà input được checket thì nav-overlay sẽ được chạy các css trong {}</p>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
