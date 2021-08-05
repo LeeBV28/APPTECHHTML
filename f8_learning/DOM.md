@@ -63,15 +63,15 @@
 
 # Dom CSS: Inline chỉ thực hiện được khi lấy ra element nodes
 get 1 div nhu sau: 
-`    var divElement = document.querySelector('div');    `
-    + Thêm từng thuộc tính: 
-`    divElement.style.width = '100px';`
-`    divElement.style.height = '200px';`
-`    divElement.style.backgroundColor = 'red';` -> với thuộc tính có - bỏ - chuyển chữ tiếp theo thành in hoa Color
-    + Thêm đồng thời nhiều thuộc tính: 
-Lợi dụng funtion `Object.assign(divElement.style, {});` 
-        + Đối số thứ nhất là thẻ được get.style   
-        + Đối số thứ 2 là một funtion truyền vào các thuộc tính cần thêm:   
+`    var divElement = document.querySelector('div');    `  
+    + Thêm từng thuộc tính:   
+`    divElement.style.width = '100px';`  
+`    divElement.style.height = '200px';`  
+`    divElement.style.backgroundColor = 'red';` -> với thuộc tính có - bỏ - chuyển chữ tiếp theo thành in hoa Color  
+    + Thêm đồng thời nhiều thuộc tính:   
+Lợi dụng funtion `Object.assign(divElement.style, {});`   
+        + Đối số thứ nhất là thẻ được get.style     
+        + Đối số thứ 2 là một funtion truyền vào các thuộc tính cần thêm:     
 `            Object.assign(divElement.style, {           `  
 `            width: '100px',                             `   
 `            height: '200px',                             `  
@@ -83,6 +83,6 @@ Lợi dụng funtion `Object.assign(divElement.style, {});`
     + Remove: Xoá class
     + Contains: Kiểm tra class trả về true or false
     + toggle: kiểm tra class nếu có thì xoá đi nếu chưa có thì thêm vào
-`    var boxClass = document.querySelector('.box');      `
-`    boxClass.classList.add('box-1', 'box-2')        `
+`    var boxClass = document.querySelector('.box');      `  
+`    boxClass.classList.add('box-1', 'box-2')        `  
         + add là kiểu có thể là remove, contains, .... và truyền vào đối số là tên class ở dạng string. có thể thêm nhiều các nhau bằng dấu , 
