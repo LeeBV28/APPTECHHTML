@@ -1,0 +1,75 @@
+có 2 phần: thiết kế và quản trị
+- sử dụng một thuật ngữ là kiến trúc 3 tầng:
+    + Tầng 1: user - phần dành cho người dùng sử dụng (client) chủ yếu là ui/ux 
+    + Tầng 2: sever - sửa lý phía logic tiếp nhận yêu cầu người dùng sử lý nó để trả lại (res) thông tin cho người dùng. 
+    + Tầng 3: Database - đây là tầng lưu trữ dữ liệu của hệ thống: lữu trữ data và cho phép sever truy suất thông tin.
+
+
+- logincal design: 
+    + Step one: Create and check ER model (tạo và kiểm tra một cái ER model )
+    + Step two: Map ER Moddel to tables
+
+
+    - Step one: gồm 9 bước. quan trọng nhất là 2 bước đầu. nếu làm không đúng cả csdl coi như có vấn đề
+        1.1: Định nghĩa thực thể
+        1.2: Xây dụng các mối quan hệ giữ các thực thể
+        1.3: Định nghĩa,, định danh. Ghép thuộc tính với các thực thể 
+        1.4: Khoanh phạm vi, thuộc tính để làm các rulle
+        1.5: chọn các ứng viên để làm khoá chính là các khoá quan hệ
+        1.6: chi tiết hoá các thực thể đặc biệt, chia nhỏ các quan hệ
+        1.7: Kiểm tra lưu đồ có thiếu hay thừa gì không tiến hành bỏ đi 
+        1.8: dùng model chỉnh các truy vấn, thao tác vào dữ liệu xem đã được lưu trữ đầy đủ hay chưa 
+        1.9: review lại với người dùng
+
+    *Khoá chính: Lựa chọn bằng 3 tiêu chính và sét từng colum 1 cho từng tiêu chí 
+        - Không trùng lặp
+        - Thông tin đơn giản, tiết kiệm hơn
+        - Ít thay đổi.
+    
+
+    -step Two: 
+        2.1: Số bảng: 
+            + Mỗi một thực thể là một bảng và các quan hệ nhiều nhiều sẽ thêm 1 bảng nữa là bảng mối quan hệ trung gian.
+            + Tên không dấu, không khoảng cách không ký tự đặc biệt. có thể sử dụng dấu gạch dưới.
+    
+        2.2: check việc lưu trữ dữ liệu
+        2.3: Tes    t chức năng thêm sửa xoá dữ liệu.
+
+    - khoá ngoài: là dữ liệu bên nhánh nhiều kiểu giữ liệu là tham chiếu bên khoá chính của bảng 1
+        + Thêm một hàng ở nhánh nhiều
+        + Đặt tên tuỳ ý
+        + Kiểu dữ liệu phải chùng với đối tượng khoá chính ở nhanh 1;
+           
+    - Giữ 2 bảng có mối quan hệ nhiều nhiều cần có thêm một bảng trung gian bảng này phải có tối thiểu 2 dữa liệu tham chiếu đến 2 bảng chính
+
+** Làm việc với MY SQL
+    - Thứ tự tạo bảng từ hình vẽ: 
+        + Tạo bảo không có khoá ngoài
+        + Tạo bảo ít khoá ngoài và khoá ngoài chiếu đến bảng đã được tạo
+        + Tạo bảng nhiều khoá ngoài
+    - Thứ tự xoá bảng: ngược lại với tạo bảng.
+    - Tạo file chứa lệnh:  new > query
+        create table KhachHang(
+            code cách nhau bằng dấu ,
+        );
+        +Kiểu dữ liệu: 
+            int
+            float
+            double
+            decimal --> Tiền tệ: quyết định được chứ số cần quy định rõ khi khơi tạo (Gia decimal(12,4))
+            char(100) --> String ít: Bắt buộc phải có số ký tự. tối 128
+            varchar(225) --> to hơn char
+            text --> Văn bản
+            data --> Ngày Tháng
+            datetime -->
+        + khoá chính cần thêm primary key (id int primary key)
+        + khoá ngoài cần thêm khai báo KhachHangID int foreign key references KhachHang(ID) 
+            KhachHang là tên khoá ngoài 
+            int là kiểu dữ liệu phải trùng với kiểu dữ liêu tham chiếu đến
+            foreign key references từ khoá
+            KhachHang() tên bảng tham chiếu đến
+            ID tham chiếu đến ID trong bảng KhachHang
+        >> Chạy lệnh đã viết: Bôi đen lệnh cần chạy > Execute(f5) khi đó bảng sẽ được bắn vào phần table của database đang kết nối
+    
+    -Sau khi da ta đã được lưu không thể sửa, dù có sửa ở lệnh bắn lại vẫn không được ghi nhận. Để sửa phải xoá bảng diddeer tạo lại:
+        + Xoá bảng bằng lệnh drop table tênbang;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid {
+            width: 100%;
+            display: block;
+        }
+        .width {
+            background-color: orange;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 200px;
+            padding: 60px;
+        }
+        h1 {
+            font-size: 70px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* media */
+        @media (min-width: 740px) and (max-width: 1023px){
+            .width {
+                width: 644px;
+            }
+        }
+        @media (min-width: 1024px) and (max-width: 1239px){
+            .width {
+                width: 984px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="width">
+            <h1>Grid system</h1>
+        </div>
+    </div>
+</body>
+</html>

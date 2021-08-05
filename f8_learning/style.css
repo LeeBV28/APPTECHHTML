@@ -171,6 +171,6 @@ li.local{
         display: none;
     }
     .nav-header .menu{
-        display: block;
+        display: block; 
     }
 }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        p {line-height: 25px;}        
+    </style>
+</head>
+<body>
+    <h1>Các giá trị luôn được hiểu là false</h1>
+    <p>số 0; fales; String rỗng ('' or ""); undefined; NaN; Null</p>
+    <p>các giá trị như trên JS luôn luôn hiểu là false và nếu sử dụng với if thì đây luôn là else</p>
+    <p><b>Như vậy: </b>kiểu string nếu rỗng sẽ là <b>false</b> nếu có 1 ký tự thì luôn luôn là <b>true</b></p>
+    <hr>
+    <h1>So Sánh tuyệt đối (===, !==)</h1>
+    <p>VD: <br>
+        var a = 1; <br>
+        var b = 1; <br>
+        Nếu so sánh a == b kết quả true <br>
+        Nhưng nếu: b = '1'; là một string ta ss a == b kết quả vẫn là true vì đây chỉ lấy value chứ không quan tâm đến kiểu giá trị <br>
+        nhưng nếu ta so sánh tuyệt đối a===b --> false vì một số không thể bằng một chuỗi tương tự như số 1 không thể bằng chữ 1 <br>
+        Tương tự như vậy với !== khác tuyệt đối;    
+    </p>
+    <h1>Chuỗi trong JavaScript</h1>
+    <p><b>Backslash</b> Để hiện thị các ký tự trùng với ký hiệu chuỗi ('' or "") trong js</p>
+    <p><b>vd: </b>Cần viết chữ lebv trong cặp nháy 'Lebv' thì cần viết <br>
+        var name = 'Tên tôi là \'lebv\''; --> Tên tôi là 'lebv' <br>
+        vậy nếu muốn hiển thị ký tự \ ra web thì ta cần dùng <br>
+        var symbol = 'đây là ký tự \\' --> đây là ký tự \
+    </p>
+    <h3>để xuống dòng cần sử dụng nỗi chuỗi</h3>
+    <p> var demo = 'Tôi tên là lebv" <br>
+                +'tôi đang sống ở hoà bình'  <br>      
+                +'tôi chưa có thu nhập 30tr/tháng' <br>
+        ---> Tôi tên là lebv <br>
+             tôi đang số ở hoà bình <br>
+             tôi chưa có thu nhập 30tr/tháng
+    </p>
+    <h3>Template string EP6</h3>
+    <p>
+        var fistName = 'Bùi'; <br>
+        var lastName = 'Lê'; <br>
+        để hiện thị <b>Tôi là: Bùi Lê</b> có 2 cách viết sau <br>
+        Viết thường: console.log('Tôi là: ' + fistName + ' ' + lastName); --> Tôi là: Bùi Lê <br>
+        Sử dụng Template string: console.log(`Tôi là: ${fistName} ${lastName}`); --> Tôi là: Bùi Lê <br>
+        <b>Lưu Ý: </b>Giá trị trong cặp {} phải là string nếu không phải là string js sẽ tự động vover thành string
+    </p>
+    <h3>Làm việc với chuỗi</h3>
+    <p>var mystring = 'Bùi Văn Lê';</p>
+    <p>
+        1. <b>Length:</b> Đếm ký tự trong chuỗi <br>
+        mystring.leghth --> 10 <br>
+        2. <b>Find index:</b> Tìm vị trí của một ký tự <br>
+        mystring.indexOf('Văn') --> 4 (đây là vị trí của ký tự) <br>
+            + Nếu ký tự không có sẽ trả về -1 <br>
+            + tìm kiếm từ vị trí chỉ định: mystring.indexOf('ký tự cần tim', vị trí bắt đầu tìm kiếm là một số) <br>
+            + Tìm kiếm từ cuối lên dầu: mystring.lastOf() <br>
+        3. <b>Cut string:</b> cắt chuỗi <br>
+        mystring.slice(4,7) --> cắt từ vị trí thứ 4 đến thứ 7 <br>
+        4. <b>Replace:</b> ghi đè hay là thay thế: <br>
+        mystring.replace('ký tự cần tìm', 'ký tự thay thế') (thêm /ký tự cần tìm/g để tìm và thay thế tất cả các ký tự giống nhau trong chuỗi) <br>
+        5. <b>conver to upper case and lower case:</b> Chuyển đổi thành chữ hoa và chữ thường. <br>
+        mystring.toUpperCase() <br>
+        mystring.toLowerCase() <br>
+        6. <b>Trim:</b> Lọai bỏ dấu cách ở đầu hoặc ở cuối <br>
+        mystring.trim() <br>
+        7. <b>Split:</b> Cắt một chuỗi thành một array nhờ điểm chung <br>
+        var mystring2 = 'JavaScript', 'php', 'Ruby'; điểm chung ở đây là , <br>
+        mystring2.spit(', ') để chuyển đổi hết chuyền vào một chuỗi rỗng thì mỗi ký tự sẽ là một phần tử của array: mystring2.split(''); <br>
+        8. <b>Get a character by index:</b> Lấy ký tự bởi vị trí cho trước
+        mystring.charAt(vị trí): mystring.charAt(3) --> i <br>
+        nếu không có sẽ trả về một chuỗi rỗng <br>
+        cách 2: mystring[vị trí] nếu không có sẽ trả về undefined
+    </p>
+    <hr>
+    <h1>Object</h1>
+    <div class="container">
+        <h2>Để chuyền vào object một biết hoặc lấy ra bằng một biết có tên trước dùng [tên biến]</h2>
+        <p>
+            - có một biến là kyemail: <b>var keyEmail = email;</b> ta chuyền email vào là một keyName trong object như sau: <br>
+            var myInfo = { <br>
+                name: 'le bv', <br>
+                age: 18, <br>
+                addres: 'Ha noi, VN', <br>
+                [keyName]: 'lebv28@gmail.com'   --> object này sẽ có keyname là email nếu thay đổi tên biến keyEmail thì kyname sẽ thay đổi theo <br>
+            } <br>
+        <b>Lấy ra tất cả key or value của object: </b> <br>
+            dùng lệnh: object.keys(truyền vào tên object) tương tự với value object.values(name object) <br>
+            vd: console.log(object.keys(myInfo))
+        </p>
+        <h2>
+            Tương tự truy suất dùng objectname[var]
+        </h2>
+        <p>
+            var myInfo = {   <br>
+                name: 'le bv', <br>
+                age: 18, <br>
+                addres: 'Ha noi, VN', <br>
+                [keyName]: 'love you' <br>
+            } <br>
+            var mykey = 'name'; <br>
+            console.log(myInfo[mykey]); --> le bv   <br>
+        </p>
+        <hr>
+        <h2>Object constructer: Tạo nên một bản thiết kế với những thông tin giống nhau từ của 2 object</h2>
+        <h3>Tạo một Object constructer</h3>
+        <p>
+            <b>Khởi tạo một constrocter</b> <br>
+            function <b>User</b>(fistName, lastName, avatar) { --> User là tên object constrocter<br>
+                this.fistName = fistName; <br>   --> this đồng nghĩa là User.fistName, fistName là keynam của object User
+                this.lastName = lastName; <br>
+                this.avatar = avatar; <br>
+            } <br>
+            <b>gọi một objec constrocter và truyền giá trị vào cho nó</b>  <br>
+            var author = new User('le', 'bv', 'avatar'); <br>  --> gọi object conStructer có tên User và gán các biến đã định sẵn cho nó
+            var user = new User('Nhung', 'Đồng', 'avatar'); <br> 
+            <br>
+            author.title = 'đang học tại FPT'; --> thêm một giá trị ngoài object constrocter là title: 'dang hoc tại FPT', <br>
+            <br>
+            console.log(author); <br>
+            console.log(user); <br>
+        </p>
+        <h4>Thêm một thuộc tính vào object constrocter</h4>
+        <p>
+            User.prototype.classname = 'T2104E' <br>
+            User --> tên object constrocter  <br>
+            prototype --> kiểu để tryền vào <br>
+            classname  --> tên thuộc tính truyền vào (keyname) <br>
+            sau là giá trị <br>
+            console.log(author.classname); <br>
+            sẽ được giá trị: T2104E
+        </p>
+    </div>
+    <hr>
+    <h1>Vòng Lặp (loop)</h1>
+    <div class="container">
+        <h2>For In: Có làm việc hiệu quả với object</h2>
+        <p>có thể sử dụng key in để in ra các key của object or giá trị của key <br>
+            <b>có một object </b> <br>
+            var info = { <br>
+                name: 'le bv', <br>
+                age: 25, <br>
+                address: 'Ha Noi, VN' <br>
+            } <br>
+            <b>In ra key: </b>Truyền vào một biến key. for in sẽ lấy ra key của info <br>
+            for (var key in info) { <br>
+                console.log(key); <br>
+            } <br>
+            
+            <b>Truyền biến key vào để lấy ra giá trị của key: </b> <br>
+            for (var key in info) { <br>
+                console.log(info[key]); <br>  dòng này tượNg tự như info.keyobject nhưng là biến cần cho vào cặp []
+            } <br>
+        </p>
+        <p>Tương tự với array: Lưu ý key của array chính là index là vị trí của phần tử 0, 1, 2, ... <br>
+            var languages = [ <br>
+            'javascript', <br>
+            'PHP', <br>
+            'ruby' <br>
+        ] <br>
+        for(var key in languages) { <br>
+            console.log(languages[key]) <br>
+        } <br>
+        </p>
+        <p><b>For in với một string:</b> Ta có thể lấy ra các ký tự của string <br>
+            var languages = 'javascript'; <br>
+            for(var key in languages) { <br>
+                console.log(languages[key]) <br>
+            } <br>
+        </p>
+        <hr>
+        <h2>For of: Làm việc hiệu quả với array <br></h2>
+        <p> <b>Lấy ra all giá trị của array</b> <br>
+            var languages = [ <br>
+            'javarscript', <br>
+            'php', <br>
+            'java', <br>
+            'python' <br>
+        ] <br>
+        for (var value of languages) { <br>
+            console.log(value) <br>
+        } <br>
+        </p>
+        <p>Với object cần kết hợp object.keys|values() <br>
+            myinfo = { <br>
+                name: 'lebv', <br>
+                age: 25, <br>
+                address: 'Ha Noi, VN' <br>
+            } <br>
+            var key = Object.values(myinfo); --> Lấy ra value của object dưới dạng 1 array <br>
+            for(var value of key) { <br>
+                console.log(value) <br>
+            } <br>
+        </p>
+    </div>
+    <script>
+        var a = document.forms
+        console.log(a);
+        
+    </script>
+</body>
+</html>

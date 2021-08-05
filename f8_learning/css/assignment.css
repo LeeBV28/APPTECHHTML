@@ -5,6 +5,7 @@
 }
 html {
     font-family: Helvetica, Arial, sans-serif;
+    line-height: 14px;
 }
 #main {
     min-height: 2000px; 
