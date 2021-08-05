@@ -70,13 +70,13 @@ get 1 div nhu sau:
 `    divElement.style.backgroundColor = 'red';` -> với thuộc tính có - bỏ - chuyển chữ tiếp theo thành in hoa Color
     + Thêm đồng thời nhiều thuộc tính: 
 Lợi dụng funtion `Object.assign(divElement.style, {});` 
-        + Đối số thứ nhất là thẻ được get.style 
-        + Đối số thứ 2 là một funtion truyền vào các thuộc tính cần thêm: 
-`            Object.assign(divElement.style, {           `
-`            width: '100px',                             `
-`            height: '200px',                             `
-`            backgroundColor: 'red',                     `
-`           });                                             `
+        + Đối số thứ nhất là thẻ được get.style   
+        + Đối số thứ 2 là một funtion truyền vào các thuộc tính cần thêm:   
+`            Object.assign(divElement.style, {           `  
+`            width: '100px',                             `   
+`            height: '200px',                             `  
+`            backgroundColor: 'red',                     `  
+`           });                                             `  
 
 # ClassList: Cho phép thêm sửa xoá một class
     + Add: thêm class
