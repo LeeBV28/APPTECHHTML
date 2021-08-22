@@ -73,3 +73,27 @@ có 2 phần: thiết kế và quản trị
     
     -Sau khi da ta đã được lưu không thể sửa, dù có sửa ở lệnh bắn lại vẫn không được ghi nhận. Để sửa phải xoá bảng diddeer tạo lại:
         + Xoá bảng bằng lệnh drop table tênbang;
+
+
+    - Thêm ràng buộc: 
+        + NOT NULL : Không được để trống
+        + NOT NULL UNIQUE : Không trống, k trùng
+        + Key mặc định là not null
+        + Check(Điều kiện): Check điều kiện viết trong ngoặc VD: SoLuongTon int not null check(SoLuongTon >=0) --> Ràng buộc nâng cao
+            + getdate(): Ngày hiện tại
+            + AND: Thêm điều kiện
+            + OR: Hoặc điều kiện
+
+
+*** Tổng lại
+    + XĐ các thực thể
+    + XĐ mối quan hệ giữa các thự thể
+    + Thêm colum đối tượng các thự thể
+    + XĐ khoá chính
+    + Vẽ dbdesigner 
+    + Add all bảng
+    + Mỗi quan hệ nhiều nhiều thêm một bảng quan hệ
+    + Chi tiết đối tượng từng thực thể > kiểu dữ liệu từng đối tượng
+    + Mối quan hệ 1 nhiều thêm một đối tượng quan hệ ở bảng nhiều
+
+
